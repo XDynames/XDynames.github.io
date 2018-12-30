@@ -1,5 +1,5 @@
 # Site
-title:              Videojames
+title:              James Bockman
 bio:                'Computer & Data science blog'
 description:        "A place to organise projects and ongoing research"
 reading_time:       true
@@ -42,7 +42,7 @@ disqus_shortname:   James
 #facebook:           username
 github-url:          XDynames
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
+linkedin:           j-bockman-51a81380
 #xing:              username
 #instagram:          username
 #lastfm:            username
@@ -52,8 +52,8 @@ github-url:          XDynames
 #foursquare:        username
 #steam:              username
 #dribbble:          username
-#youtube:           username
-#youtube-channel:   channel
+youtube:           Video James
+#youtube-channel:   UCGjzUAqmAR8EoQe1FtJPYNQ
 #soundcloud:        username
 #weibo:             username
 #flickr:            username
