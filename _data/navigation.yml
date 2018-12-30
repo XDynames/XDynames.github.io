@@ -1,7 +1,4 @@
 # Site navigation links
 
-- title: Implementations
-  url: /Code/
-
-- title: Reports
-  url: /Reports/
+- title: Projects
+  url: /Projects/
