@@ -43,7 +43,7 @@ Leveled factors and numerical variables are then subjected to missing value anal
 
 As missing values in numerical data can often be encoded as zeros, these variables where tested for zero content. This revealed that the highest zero value content, 3.5%, is observed in the Popularity variable and 0.25% where found in the case of danceability. These low levels of zero content are likely appropriate for the given variables and are left unchanged.
 
-<img src="SMI-RMarkdown_files/figure-markdown_github/Frequency of NA and Zero-1.png" alt="Bar charts showing the frequency of missing values (left) and zero values (right) as a percentage of overall observations. \label{missing}" width="0.49\linewidth" /><img src="SMI-RMarkdown_files/figure-markdown_github/Frequency of NA and Zero-2.png" alt="Bar charts showing the frequency of missing values (left) and zero values (right) as a percentage of overall observations. \label{missing}" width="0.49\linewidth" />
+<img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/Frequency of NA and Zero-1.png" alt="Bar charts showing the frequency of missing values (left) and zero values (right) as a percentage of overall observations. \label{missing}" width="0.49\linewidth" /><img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/Frequency of NA and Zero-2.png" alt="Bar charts showing the frequency of missing values (left) and zero values (right) as a percentage of overall observations. \label{missing}" width="0.49\linewidth" />
 <p class="caption">
 Bar charts showing the frequency of missing values (left) and zero values (right) as a percentage of overall observations.
 </p>
@@ -59,7 +59,7 @@ Popularity appears to be bi-modal, with modes at 0 and 20. The mode present at z
 
 Loudness has a single mode at around -5 with most examples lying to the left of the mode. This skews the distribution to the left. The distribution has a low kurtosis, evidenced by the lack of a sharp mode, (right).
 
-<img src="SMI-RMarkdown_files/figure-markdown_github/plot1-1.png" alt="Histograms of the popularity (left) and loudness (right) variables imported from Spotify. \label{PopLoud}" width="0.49\linewidth" /><img src="SMI-RMarkdown_files/figure-markdown_github/plot1-2.png" alt="Histograms of the popularity (left) and loudness (right) variables imported from Spotify. \label{PopLoud}" width="0.49\linewidth" />
+<img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/plot1-1.png" alt="Histograms of the popularity (left) and loudness (right) variables imported from Spotify. \label{PopLoud}" width="0.49\linewidth" /><img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/plot1-2.png" alt="Histograms of the popularity (left) and loudness (right) variables imported from Spotify. \label{PopLoud}" width="0.49\linewidth" />
 <p class="caption">
 Histograms of the popularity (left) and loudness (right) variables imported from Spotify.
 </p>
@@ -68,12 +68,12 @@ Energy has an extremely low kurtosis, to the point that no easily identifiable m
 
 Danceability displays a distribution that is approximately normal. There is a single mode at 0.6 and the kurtosis of the distribution appears to be normal (~3), (right).
 
-<img src="SMI-RMarkdown_files/figure-markdown_github/plot2-1.png" alt="Histograms of the Energy (left) and Danceability (right) variables imported from Spotify. \label{EneDan}" width="0.49\linewidth" /><img src="SMI-RMarkdown_files/figure-markdown_github/plot2-2.png" alt="Histograms of the Energy (left) and Danceability (right) variables imported from Spotify. \label{EneDan}" width="0.49\linewidth" />
+<img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/plot2-1.png" alt="Histograms of the Energy (left) and Danceability (right) variables imported from Spotify. \label{EneDan}" width="0.49\linewidth" /><img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/plot2-2.png" alt="Histograms of the Energy (left) and Danceability (right) variables imported from Spotify. \label{EneDan}" width="0.49\linewidth" />
 <p class="caption">
 Histograms of the Energy (left) and Danceability (right) variables imported from Spotify.
 </p>
 
-<img src="SMI-RMarkdown_files/figure-markdown_github/plot3-1.png" width="0.49\linewidth" style="display: block; margin: auto;" />
+<img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/plot3-1.png" width="0.49\linewidth" style="display: block; margin: auto;" />
 
 The figure above is a histogram of the Duration variable, which is the duration of songs in the Spotify dataset, measured in milliseconds. The distribution is unimodal with high kurtosis. There is a slight positive skew, with apparent outliers at the higher end of the distribution.
 
@@ -83,7 +83,7 @@ The figure above is a histogram of the Duration variable, which is the duration 
 
 Mode shows a strong preference for songs to be written in a major key as apposed to a minor.
 
-<img src="SMI-RMarkdown_files/figure-markdown_github/plot4-1.png" alt="Bar charts of the Key (left) and Mode (right) variables imported from the Spotify set. \label{KeyMod}" width="0.49\linewidth" /><img src="SMI-RMarkdown_files/figure-markdown_github/plot4-2.png" alt="Bar charts of the Key (left) and Mode (right) variables imported from the Spotify set. \label{KeyMod}" width="0.49\linewidth" />
+<img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/plot4-1.png" alt="Bar charts of the Key (left) and Mode (right) variables imported from the Spotify set. \label{KeyMod}" width="0.49\linewidth" /><img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/plot4-2.png" alt="Bar charts of the Key (left) and Mode (right) variables imported from the Spotify set. \label{KeyMod}" width="0.49\linewidth" />
 <p class="caption">
 Bar charts of the Key (left) and Mode (right) variables imported from the Spotify set.
 </p>
@@ -92,7 +92,7 @@ Bar charts of the Key (left) and Mode (right) variables imported from the Spotif
 
  (right) shows the number of tracks with respect to each decade analysed. The most common decade that songs originated from is the 50s, followed by the 70s, with about 600 and 550 songs respectively. The 60s, 80s, 90s, and 00s all have approximately 150 to 250 songs each.
 
-<img src="SMI-RMarkdown_files/figure-markdown_github/plot5-1.png" alt="Barcharts of the Time Signature (left) and Decade (right) variables imported from the Spotify set. \label{TimDec}" width="0.49\linewidth" /><img src="SMI-RMarkdown_files/figure-markdown_github/plot5-2.png" alt="Barcharts of the Time Signature (left) and Decade (right) variables imported from the Spotify set. \label{TimDec}" width="0.49\linewidth" />
+<img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/plot5-1.png" alt="Barcharts of the Time Signature (left) and Decade (right) variables imported from the Spotify set. \label{TimDec}" width="0.49\linewidth" /><img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/plot5-2.png" alt="Barcharts of the Time Signature (left) and Decade (right) variables imported from the Spotify set. \label{TimDec}" width="0.49\linewidth" />
 <p class="caption">
 Barcharts of the Time Signature (left) and Decade (right) variables imported from the Spotify set.
 </p>
@@ -108,7 +108,7 @@ Bi-variate analysis is the simultaneous analysis of two variables to explore the
 
  (right) appears to show no evidence of an association between the two variables, with the data points randomly scattered about the mean of Popularity. There is no indication of a nonlinear trend, or any outliers.
 
-<img src="SMI-RMarkdown_files/figure-markdown_github/plot6-1.png" alt="Scatter plots of the Duration (left) and Energy (right) variables against Popularity. \label{DurEner}" width="0.49\linewidth" /><img src="SMI-RMarkdown_files/figure-markdown_github/plot6-2.png" alt="Scatter plots of the Duration (left) and Energy (right) variables against Popularity. \label{DurEner}" width="0.49\linewidth" />
+<img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/plot6-1.png" alt="Scatter plots of the Duration (left) and Energy (right) variables against Popularity. \label{DurEner}" width="0.49\linewidth" /><img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/plot6-2.png" alt="Scatter plots of the Duration (left) and Energy (right) variables against Popularity. \label{DurEner}" width="0.49\linewidth" />
 <p class="caption">
 Scatter plots of the Duration (left) and Energy (right) variables against Popularity.
 </p>
@@ -117,21 +117,21 @@ In (left) there appears to be a weak positive association between Popularity and
 
 A weak positive association is also evident in (right) between Popularity and Loudness, with some indication of curvature in the relationship. Again a dense section of samples are seen around popularity's mean that constitutes over a the range of values loudness has. Possible outliers may be present with lower levels of Loudness and higher Popularity scores. The variance of the Popularity score appears to be increasing for higher levels of Loudness.
 
-<img src="SMI-RMarkdown_files/figure-markdown_github/plot7-1.png" alt="Scatter plots of the Danceability (left) and Loudness (right) variables against Popularity. \label{DanLou}" width="0.49\linewidth" /><img src="SMI-RMarkdown_files/figure-markdown_github/plot7-2.png" alt="Scatter plots of the Danceability (left) and Loudness (right) variables against Popularity. \label{DanLou}" width="0.49\linewidth" />
+<img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/plot7-1.png" alt="Scatter plots of the Danceability (left) and Loudness (right) variables against Popularity. \label{DanLou}" width="0.49\linewidth" /><img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/plot7-2.png" alt="Scatter plots of the Danceability (left) and Loudness (right) variables against Popularity. \label{DanLou}" width="0.49\linewidth" />
 <p class="caption">
 Scatter plots of the Danceability (left) and Loudness (right) variables against Popularity.
 </p>
 
 ### 5.2 Categorical Variables
 
-<img src="SMI-RMarkdown_files/figure-markdown_github/plot9-1.png" alt="Box plots of sample Key (left) and Mode (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" /><img src="SMI-RMarkdown_files/figure-markdown_github/plot9-2.png" alt="Box plots of sample Key (left) and Mode (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" />
+<img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/plot9-1.png" alt="Box plots of sample Key (left) and Mode (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" /><img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/plot9-2.png" alt="Box plots of sample Key (left) and Mode (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" />
 <p class="caption">
 Box plots of sample Key (left) and Mode (right) variables against Popularity.
 </p>
 
 Across the series of keys there is very little variation in group mean and variance. Some groups are are slightly smaller in range than others, but the distributions appear uniform. The only aspect in which they differ greatly is the density of examples present in the different categories; the sharp keys all being particularly sparse, .
 
-<img src="SMI-RMarkdown_files/figure-markdown_github/plot10-1.png" alt="Box plots of sample Time Signatue (left) and Decade (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" /><img src="SMI-RMarkdown_files/figure-markdown_github/plot10-2.png" alt="Box plots of sample Time Signatue (left) and Decade (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" />
+<img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/plot10-1.png" alt="Box plots of sample Time Signatue (left) and Decade (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" /><img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/plot10-2.png" alt="Box plots of sample Time Signatue (left) and Decade (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" />
 <p class="caption">
 Box plots of sample Time Signatue (left) and Decade (right) variables against Popularity.
 </p>
@@ -142,7 +142,7 @@ Across the decades, the 50s and the 70s have a particularly dense amount of obse
 
 ### 5.3. Bivariate Analysis Between Predictors
 
-<img src="SMI-RMarkdown_files/figure-markdown_github/Corelation Matrix-1.png" width="0.75\linewidth" style="display: block; margin: auto;" />
+<img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/Corelation Matrix-1.png" width="0.75\linewidth" style="display: block; margin: auto;" />
 
 The correlation matrix above indicates a fairly strong correlation between the Energy and Loudness variables. No other variables look to have significant associations with one another.
 
@@ -186,7 +186,7 @@ The assumptions of the final linear model are:
 
 These assumptions are checked using the plots below.
 
-<img src="SMI-RMarkdown_files/figure-markdown_github/Assumption Checking Plot 1-1.png" alt="Plots of the residual versus the fitted values for the two proposed models. \label{ResFit}" width="0.49\linewidth" /><img src="SMI-RMarkdown_files/figure-markdown_github/Assumption Checking Plot 1-2.png" alt="Plots of the residual versus the fitted values for the two proposed models. \label{ResFit}" width="0.49\linewidth" />
+<img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/Assumption Checking Plot 1-1.png" alt="Plots of the residual versus the fitted values for the two proposed models. \label{ResFit}" width="0.49\linewidth" /><img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/Assumption Checking Plot 1-2.png" alt="Plots of the residual versus the fitted values for the two proposed models. \label{ResFit}" width="0.49\linewidth" />
 <p class="caption">
 Plots of the residual versus the fitted values for the two proposed models.
 </p>
@@ -197,7 +197,7 @@ Plots of the residual versus the fitted values for the two proposed models.
 
 **Normality** The above Q-Q plot shows a good degree of normality, aside from the tails of the plot, which see small kinks at either end, suggesting slightly heavier tails than a normal distribution. However, as these kinks are only small, we can still accept from this plot that the normality assumption is met.
 
-<img src="SMI-RMarkdown_files/figure-markdown_github/Assumption Checking Plot 2-1.png" alt="Scatter plot of model residuals vs popularity, by artist. \label{ResScatter}" width="0.7\linewidth" />
+<img src="assests/img/2019-01-05-smi-group-project/SMI-RMarkdown_files/figure-markdown_github/Assumption Checking Plot 2-1.png" alt="Scatter plot of model residuals vs popularity, by artist. \label{ResScatter}" width="0.7\linewidth" />
 <p class="caption">
 Scatter plot of model residuals vs popularity, by artist.
 </p>
