@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Regression] Song Popularity on Spotify"
-date:   2019-05-01
+date:   2019-01-05
 excerpt: "A model for predicting song popularity using data scraped from Spotify"
 tag:
 comments: false
