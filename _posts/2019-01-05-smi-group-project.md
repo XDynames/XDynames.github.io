@@ -43,7 +43,9 @@ Leveled factors and numerical variables are then subjected to missing value anal
 
 As missing values in numerical data can often be encoded as zeros, these variables where tested for zero content. This revealed that the highest zero value content, 3.5%, is observed in the Popularity variable and 0.25% where found in the case of danceability. These low levels of zero content are likely appropriate for the given variables and are left unchanged.
 
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//Frequency of NA and Zero-1.png" alt="Bar charts showing the frequency of missing values (left) and zero values (right) as a percentage of overall observations. \label{missing}" width="0.49\linewidth" /><img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//Frequency of NA and Zero-2.png" alt="Bar charts showing the frequency of missing values (left) and zero values (right) as a percentage of overall observations. \label{missing}" width="0.49\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//Frequency of NA and Zero-1.png" alt="Bar charts showing the frequency of missing values (left) and zero values (right) as a percentage of overall observations. \label{missing}" width="0.49\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//Frequency of NA and Zero-2.png" alt="Bar charts showing the frequency of missing values (left) and zero values (right) as a percentage of overall observations. \label{missing}" width="0.49\linewidth" />
+
 <p class="caption">
 Bar charts showing the frequency of missing values (left) and zero values (right) as a percentage of overall observations.
 </p>
@@ -59,7 +61,8 @@ Popularity appears to be bi-modal, with modes at 0 and 20. The mode present at z
 
 Loudness has a single mode at around -5 with most examples lying to the left of the mode. This skews the distribution to the left. The distribution has a low kurtosis, evidenced by the lack of a sharp mode, (right).
 
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot1-1.png" alt="Histograms of the popularity (left) and loudness (right) variables imported from Spotify. \label{PopLoud}" width="0.49\linewidth" /><img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot1-2.png" alt="Histograms of the popularity (left) and loudness (right) variables imported from Spotify. \label{PopLoud}" width="0.49\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot1-1.png" alt="Histograms of the popularity (left) and loudness (right) variables imported from Spotify. \label{PopLoud}" width="0.49\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot1-2.png" alt="Histograms of the popularity (left) and loudness (right) variables imported from Spotify. \label{PopLoud}" width="0.49\linewidth" />
 <p class="caption">
 Histograms of the popularity (left) and loudness (right) variables imported from Spotify.
 </p>
@@ -76,13 +79,15 @@ The figure above is a histogram of the Duration variable, which is the duration 
 ### 4.2 Catagorical Variables
  (left) indicates that Key has a strong mode in category C with other frequently sampled categories A, D and G. The Categories D\#, F\#, G\# are the least likely key for a song to be in.
 Mode shows a strong preference for songs to be written in major key as apposed to a minor.
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot4-1.png" alt="Bar charts of the Key (left) and Mode (right) variables imported from the Spotify set. \label{KeyMod}" width="0.49\linewidth" /><img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot4-2.png" alt="Bar charts of the Key (left) and Mode (right) variables imported from the Spotify set. \label{KeyMod}" width="0.49\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot4-1.png" alt="Bar charts of the Key (left) and Mode (right) variables imported from the Spotify set. \label{KeyMod}" width="0.49\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot4-2.png" alt="Bar charts of the Key (left) and Mode (right) variables imported from the Spotify set. \label{KeyMod}" width="0.49\linewidth" />
 <p class="caption">
 Bar charts of the Key (left) and Mode (right) variables imported from the Spotify set.
 </p>
  (left) shows the number of tracks grouped by their respective time signatures. The most common time signature observed is 4 with about 1800 tracks The second most common time signature is 3 with around 250 tracks. Very few tracks have time signatures of 0, 1 and 5.
  (right) shows the number of tracks with respect to each decade analysed. The most common decade that songs originated from is the 50s, followed by the 70s, with about 600 and 550 songs respectively. The 60s, 80s, 90s, and 00s all have approximately 150 to 250 songs each.
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot5-1.png" alt="Barcharts of the Time Signature (left) and Decade (right) variables imported from the Spotify set. \label{TimDec}" width="0.49\linewidth" /><img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot5-2.png" alt="Barcharts of the Time Signature (left) and Decade (right) variables imported from the Spotify set. \label{TimDec}" width="0.49\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot5-1.png" alt="Barcharts of the Time Signature (left) and Decade (right) variables imported from the Spotify set. \label{TimDec}" width="0.49\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot5-2.png" alt="Barcharts of the Time Signature (left) and Decade (right) variables imported from the Spotify set. \label{TimDec}" width="0.49\linewidth" />
 <p class="caption">
 Barcharts of the Time Signature (left) and Decade (right) variables imported from the Spotify set.
 </p>
@@ -97,7 +102,8 @@ Bi-variate analysis is the simultaneous analysis of two variables to explore the
 
  (right) appears to show no evidence of an association between the two variables, with the data points randomly scattered about the mean of Popularity. There is no indication of a nonlinear trend, or any outliers.
 
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot6-1.png" alt="Scatter plots of the Duration (left) and Energy (right) variables against Popularity. \label{DurEner}" width="0.49\linewidth" /><img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot6-2.png" alt="Scatter plots of the Duration (left) and Energy (right) variables against Popularity. \label{DurEner}" width="0.49\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot6-1.png" alt="Scatter plots of the Duration (left) and Energy (right) variables against Popularity. \label{DurEner}" width="0.49\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot6-2.png" alt="Scatter plots of the Duration (left) and Energy (right) variables against Popularity. \label{DurEner}" width="0.49\linewidth" />
 <p class="caption">
 Scatter plots of the Duration (left) and Energy (right) variables against Popularity.
 </p>
@@ -106,21 +112,24 @@ In (left) there appears to be a weak positive association between Popularity and
 
 A weak positive association is also evident in (right) between Popularity and Loudness, with some indication of curvature in the relationship. Again a dense section of samples are seen around popularity's mean that constitutes over a the range of values loudness has. Possible outliers may be present with lower levels of Loudness and higher Popularity scores. The variance of the Popularity score appears to be increasing for higher levels of Loudness.
 
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot7-1.png" alt="Scatter plots of the Danceability (left) and Loudness (right) variables against Popularity. \label{DanLou}" width="0.49\linewidth" /><img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot7-2.png" alt="Scatter plots of the Danceability (left) and Loudness (right) variables against Popularity. \label{DanLou}" width="0.49\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot7-1.png" alt="Scatter plots of the Danceability (left) and Loudness (right) variables against Popularity. \label{DanLou}" width="0.49\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot7-2.png" alt="Scatter plots of the Danceability (left) and Loudness (right) variables against Popularity. \label{DanLou}" width="0.49\linewidth" />
 <p class="caption">
 Scatter plots of the Danceability (left) and Loudness (right) variables against Popularity.
 </p>
 
 ### 5.2 Categorical Variables
 
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot9-1.png" alt="Box plots of sample Key (left) and Mode (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" /><img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot9-2.png" alt="Box plots of sample Key (left) and Mode (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot9-1.png" alt="Box plots of sample Key (left) and Mode (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot9-2.png" alt="Box plots of sample Key (left) and Mode (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" />
 <p class="caption">
 Box plots of sample Key (left) and Mode (right) variables against Popularity.
 </p>
 
 Across the series of keys there is very little variation in group mean and variance. Some groups are are slightly smaller in range than others, but the distributions appear uniform. The only aspect in which they differ greatly is the density of examples present in the different categories; the sharp keys all being particularly sparse, .
 
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot10-1.png" alt="Box plots of sample Time Signatue (left) and Decade (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" /><img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot10-2.png" alt="Box plots of sample Time Signatue (left) and Decade (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot10-1.png" alt="Box plots of sample Time Signatue (left) and Decade (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot10-2.png" alt="Box plots of sample Time Signatue (left) and Decade (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" />
 <p class="caption">
 Box plots of sample Time Signatue (left) and Decade (right) variables against Popularity.
 </p>
@@ -175,7 +184,8 @@ The assumptions of the final linear model are:
 
 These assumptions are checked using the plots below.
 
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//Assumption Checking Plot 1-1.png" alt="Plots of the residual versus the fitted values for the two proposed models. \label{ResFit}" width="0.49\linewidth" /><img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//Assumption Checking Plot 1-2.png" alt="Plots of the residual versus the fitted values for the two proposed models. \label{ResFit}" width="0.49\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//Assumption Checking Plot 1-1.png" alt="Plots of the residual versus the fitted values for the two proposed models. \label{ResFit}" width="0.49\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//Assumption Checking Plot 1-2.png" alt="Plots of the residual versus the fitted values for the two proposed models. \label{ResFit}" width="0.49\linewidth" />
 <p class="caption">
 Plots of the residual versus the fitted values for the two proposed models.
 </p>
