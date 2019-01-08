@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Report] Dimensionalit Reduction"
+title:  "[Report] Dimensionality Reduction"
 date:   2019-01-08
 excerpt: "Statistical methods for dimensionality reduction of feature spaces."
 tag:
