@@ -99,8 +99,7 @@ Bi-variate analysis is the simultaneous analysis of two variables to explore the
 
  (right) appears to show no evidence of an association between the two variables, with the data points randomly scattered about the mean of Popularity. There is no indication of a nonlinear trend, or any outliers.
 
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot6-1.png" alt="Scatter plots of the Duration (left) and Energy (right) variables against Popularity. \label{DurEner}" width="0.49\linewidth" />
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot6-2.png" alt="Scatter plots of the Duration (left) and Energy (right) variables against Popularity. \label{DurEner}" width="0.49\linewidth" />
+|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot6-1.png" alt="Scatter plots of the Duration (left) and Energy (right) variables against Popularity." />|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot6-2.png" alt="Scatter plots of the Duration (left) and Energy (right) variables against Popularity."/>|
 <p class="caption">
 Scatter plots of the Duration (left) and Energy (right) variables against Popularity.
 </p>
@@ -109,24 +108,21 @@ In (left) there appears to be a weak positive association between Popularity and
 
 A weak positive association is also evident in (right) between Popularity and Loudness, with some indication of curvature in the relationship. Again a dense section of samples are seen around popularity's mean that constitutes over a the range of values loudness has. Possible outliers may be present with lower levels of Loudness and higher Popularity scores. The variance of the Popularity score appears to be increasing for higher levels of Loudness.
 
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot7-1.png" alt="Scatter plots of the Danceability (left) and Loudness (right) variables against Popularity. \label{DanLou}" width="0.49\linewidth" />
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot7-2.png" alt="Scatter plots of the Danceability (left) and Loudness (right) variables against Popularity. \label{DanLou}" width="0.49\linewidth" />
+|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot7-1.png" alt="Scatter plots of the Danceability (left) and Loudness (right) variables against Popularity."/>|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot7-2.png" alt="Scatter plots of the Danceability (left) and Loudness (right) variables against Popularity."/>|
 <p class="caption">
 Scatter plots of the Danceability (left) and Loudness (right) variables against Popularity.
 </p>
 
 ### 5.2 Categorical Variables
 
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot9-1.png" alt="Box plots of sample Key (left) and Mode (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" />
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot9-2.png" alt="Box plots of sample Key (left) and Mode (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" />
+|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot9-1.png" alt="Box plots of sample Key (left) and Mode (right) variables against Popularity." />|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot9-2.png" alt="Box plots of sample Key (left) and Mode (right) variables against Popularity."/>|
 <p class="caption">
 Box plots of sample Key (left) and Mode (right) variables against Popularity.
 </p>
 
 Across the series of keys there is very little variation in group mean and variance. Some groups are are slightly smaller in range than others, but the distributions appear uniform. The only aspect in which they differ greatly is the density of examples present in the different categories; the sharp keys all being particularly sparse, .
 
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot10-1.png" alt="Box plots of sample Time Signatue (left) and Decade (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" />
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot10-2.png" alt="Box plots of sample Time Signatue (left) and Decade (right) variables against Popularity. \label{KeyMod}" width="0.49\linewidth" />
+|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot10-1.png" alt="Box plots of sample Time Signatue (left) and Decade (right) variables against Popularity." />|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot10-2.png" alt="Box plots of sample Time Signatue (left) and Decade (right) variables against Popularity." />|
 <p class="caption">
 Box plots of sample Time Signatue (left) and Decade (right) variables against Popularity.
 </p>
@@ -181,8 +177,7 @@ The assumptions of the final linear model are:
 
 These assumptions are checked using the plots below.
 
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//Assumption Checking Plot 1-1.png" alt="Plots of the residual versus the fitted values for the two proposed models. \label{ResFit}" width="0.49\linewidth" />
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//Assumption Checking Plot 1-2.png" alt="Plots of the residual versus the fitted values for the two proposed models. \label{ResFit}" width="0.49\linewidth" />
+|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//Assumption Checking Plot 1-1.png" alt="Plots of the residual versus the fitted values for the two proposed models." />|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//Assumption Checking Plot 1-2.png" alt="Plots of the residual versus the fitted values for the two proposed models." />|
 <p class="caption">
 Plots of the residual versus the fitted values for the two proposed models.
 </p>
@@ -193,7 +188,7 @@ Plots of the residual versus the fitted values for the two proposed models.
 
 **Normality** The above Q-Q plot shows a good degree of normality, aside from the tails of the plot, which see small kinks at either end, suggesting slightly heavier tails than a normal distribution. However, as these kinks are only small, we can still accept from this plot that the normality assumption is met.
 
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//Assumption Checking Plot 2-1.png" alt="Scatter plot of model residuals vs popularity, by artist. \label{ResScatter}" width="0.7\linewidth" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//Assumption Checking Plot 2-1.png" alt="Scatter plot of model residuals vs popularity, by artist." />
 <p class="caption">
 Scatter plot of model residuals vs popularity, by artist.
 </p>
