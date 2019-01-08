@@ -224,7 +224,7 @@ Firstly, \\(\textbf{w}\\) is expressed as a linear combination of samples:
     Then the kernel function \\(k\\) is defined as
 \\(k(\textbf{x}\_{i},\textbf{x}\_{k}) = \phi(\textbf{x}\_{k})^{T}\phi(\textbf{x}\_{i})\\)
 giving: \\[
-    \textbf{w}^{T}\textbf{m}\_{j}^{\phi}= \frac{1}{n\_{j}}\sum_{k=1}^{n}\sum_{i=1}^{n}\_{j}\alpha\_{k}k(\textbf{x}\_{i},\textbf{x}\_{k}^{j})
+    \textbf{w}^{T}\textbf{m}\_{j}^{\phi}= \frac{1}{n_{j}}\sum_{k=1}^{n}\sum_{i=1}^{n_j}\alpha_{k}k(\textbf{x}\_{i},\textbf{x}\_{k}^{j})
     \\] Which can be rewritten in matrix form as:
 \\[
     \boldsymbol{\alpha}^{T}\textbf{M}\_{i}
