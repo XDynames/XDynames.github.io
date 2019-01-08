@@ -302,12 +302,11 @@ global maximum for the objective function. However, it has been shown
 that the above problem can be re-written in terms of the Gram matrix
 \\(\textbf{K}\\): \\[
         \textbf{Maximise }\text{Trace($\textbf{K}$)}
-    \\] \\[\textbf{Constrained by }
-    \begin{cases} 
+    \\] \\[\textbf{Constrained by }\\]\\[
         \textbf{K} \succeq 0 \\]\\[
         \sum_{i,j=1}^{n} \textbf{K}\_{ij}=0 \hspace{0.5cm} \boldsymbol{\forall} i,j \text{ with } \eta_{ij} = 1 \text{ or } [\eta^{T}\eta]\_{ij} = 1 \\]\\[
         \textbf{K}\_{ii} + \textbf{K}\_{jj} - \textbf{K}\_{ij} - \textbf{K}\_{ji} = \textbf{G}\_{ii} + \textbf{G}\_{jj} - \textbf{G}\_{ij} - \textbf{G}\_{ji}
-    \end{cases}\\] Where
+    \\] Where
 \\(\textbf{G}\_{ij} = \textbf{X}\_{i} \cdot \textbf{X}\_{j}\\) and
 \\(\textbf{K}\_{ij} = \textbf{Y}\_{i} \cdot \textbf{Y}\_{j}\\) are the Gram
 matrices for the input and output spaces respectively. Once this
@@ -484,7 +483,7 @@ configuration that can be used to initialise the algorithm.
 
 ## Advantages and Disadvantages
 
-A summary of the techniques features are shown in the table bwlow. Of the methods examined only one uses
+A summary of the techniques features are shown in the table below. Of the methods examined only one uses
 class labels to inform the embedding. For this reason if labelled data
 is available LDA or kLDA should be used to reduced the spaces
 dimensionality. Where different kernels and parameters can be used to
