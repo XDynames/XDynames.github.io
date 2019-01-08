@@ -201,14 +201,15 @@ Plots of the residual versus the fitted values for the two proposed models.
 
 **Normality** The above Q-Q plot shows a good degree of normality, aside from the tails of the plot, which see small kinks at either end, suggesting slightly heavier tails than a normal distribution. However, as these kinks are only small, we can still accept from this plot that the normality assumption is met.
 
+**Independence** The independence assumption is checked by assessing the residuals, and seeing if any patterns with variables arise.
+
+From the below plot, we see a clear pattern forming in the residuals. There seems to be a distinct hierarchy among the residuals, in that the residuals have formed "layers", with The Beatles and Elvis having the highest popularity for a given value of one of our residuals, followed by Beyonce, David Bowie, Blur and Elvis, in that order. In general, these distinct layers seem to not be violated, which suggest that the residuals are not truly random. This makes sense, since if an artist has a popular song, this may affect the popularity of other songs on that album, meaning the samples aren't truly independent, and hence the independence assumption is not satisfied.
+
 <img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//Assumption Checking Plot 2-1.png" alt="Scatter plot of model residuals vs popularity, by artist." />
 <p class="caption">
 Scatter plot of model residuals vs popularity, by artist.
 </p>
 
-**Independence** The independence assumption is checked by assessing the residuals, and seeing if any patterns with variables arise.
-
-From the below plot, we see a clear pattern forming in the residuals. There seems to be a distinct hierarchy among the residuals, in that the residuals have formed "layers", with The Beatles and Elvis having the highest popularity for a given value of one of our residuals, followed by Beyonce, David Bowie, Blur and Elvis, in that order. In general, these distinct layers seem to not be violated, which suggest that the residuals are not truly random. This makes sense, since if an artist has a popular song, this may affect the popularity of other songs on that album, meaning the samples aren't truly independent, and hence the independence assumption is not satisfied.
 
 9 Prediction
 =============
