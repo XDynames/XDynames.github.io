@@ -128,9 +128,8 @@ using the kernel matrix \\(\textbf{K}\\) with elements
 weights \\(\boldsymbol{\alpha}\_{k}\\) is given: \\[\begin{aligned}
             \textbf{K}\boldsymbol{\alpha}\_{k} &= n \lambda_{k}\boldsymbol{\alpha}\_{k}
         \end{aligned}\\] Once \\(\boldsymbol{\alpha}\_{k}\\) has been
-determined its elements can be used to find the eigenvectors using
-equation ([\\[eq:kernelVec\\]](#eq:kernelVec)). The projection of a sample
-into the new space can be computed by: \\[\begin{aligned}
+determined its elements can be used to find the eigenvectors using the original equation for \\(textbf{v}\_{k}\\). The projection of a sample
+into the new space can be computed using: \\[\begin{aligned}
             \phi(\textbf{x}\_{i})^{T} \textbf{V}^{k}  &= \sum_{i=1}^{n} \boldsymbol{\alpha}\_{i} K(\textbf{x}, \textbf{x}\_{i})
         \end{aligned}\\] Where \\(\textbf{V}^{k}\\) is the matrix of the
 \\(k\\) eigenvectors with the largest eigenvalues and
