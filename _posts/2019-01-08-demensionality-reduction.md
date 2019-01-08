@@ -128,7 +128,7 @@ using the kernel matrix \\(\textbf{K}\\) with elements
 weights \\(\boldsymbol{\alpha}\_{k}\\) is given: \\[\begin{aligned}
             \textbf{K}\boldsymbol{\alpha}\_{k} &= n \lambda_{k}\boldsymbol{\alpha}\_{k}
         \end{aligned}\\] Once \\(\boldsymbol{\alpha}\_{k}\\) has been
-determined its elements can be used to find the eigenvectors using the original equation for \\(textbf{v}\_{k}\\). The projection of a sample
+determined its elements can be used to find the eigenvectors using the original equation for \\(\textbf{v}\_{k}\\). The projection of a sample
 into the new space can be computed using: \\[\begin{aligned}
             \phi(\textbf{x}\_{i})^{T} \textbf{V}^{k}  &= \sum_{i=1}^{n} \boldsymbol{\alpha}\_{i} K(\textbf{x}, \textbf{x}\_{i})
         \end{aligned}\\] Where \\(\textbf{V}^{k}\\) is the matrix of the
@@ -137,7 +137,7 @@ into the new space can be computed using: \\[\begin{aligned}
 \\(k^{th}\\) eigenvector from samples in the original space. In this way
 the projection of a sample into the reduced space requires the pair-wise
 kernel matrix and weights \\(\alpha\\), thus the explicit evaluation of
-\\(\phi(\textbf{x}))\\) is never required. . In general, the transformed
+\\(\phi(\textbf{x})\\) is never required. In general, the transformed
 data may not be centred, this can be accounted for by centring the
 kernel. It can be shown that the centred kernel depends only on the
 non-centred kernel and is found by: \\[\begin{aligned}
