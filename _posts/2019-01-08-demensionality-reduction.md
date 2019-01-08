@@ -291,7 +291,7 @@ naively maximising the distance between all points globally under the
 constraint that the distances between neighbours are preserved:
 \\[
         \textbf{Maximise  } \sum_{i,j=1}^{n}||\textbf{y}\_{i}-\textbf{y}\_{j}||^{2}
-    \\] \\[\textbf{Constrained by } 
+    \\] \\[\textbf{Constrained by: }\\]\\[ 
         ||\textbf{y}\_{i}-\textbf{y}\_j||^{2} = ||\textbf{x}\_{i}-\textbf{x}\_{j}||^{2} \hspace{0.5cm} \boldsymbol{\forall} i,j \text{ with } \eta_{ij} = 1 \\]\\[
         \sum_{i=1}^{n} \textbf{y}\_{i}=0
     \\] Where \\(\textbf{y}\\) and \\(\textbf{x}\\) or the
@@ -302,7 +302,7 @@ global maximum for the objective function. However, it has been shown
 that the above problem can be re-written in terms of the Gram matrix
 \\(\textbf{K}\\): \\[
         \textbf{Maximise }\text{Trace($\textbf{K}$)}
-    \\] \\[\textbf{Constrained by }\\]\\[
+    \\] \\[\textbf{Constrained by: }\\]\\[
         \textbf{K} \succeq 0 \\]\\[
         \sum_{i,j=1}^{n} \textbf{K}\_{ij}=0 \hspace{0.5cm} \boldsymbol{\forall} i,j \text{ with } \eta_{ij} = 1 \text{ or } [\eta^{T}\eta]\_{ij} = 1 \\]\\[
         \textbf{K}\_{ii} + \textbf{K}\_{jj} - \textbf{K}\_{ij} - \textbf{K}\_{ji} = \textbf{G}\_{ii} + \textbf{G}\_{jj} - \textbf{G}\_{ij} - \textbf{G}\_{ji}
@@ -394,7 +394,7 @@ The re-formulated primal problem solved to find the optimal Gram matrix
 for the embeddings can also be reformulated to a dual via a Lagrange
 transform to: \\[
     \textbf{Maximise } \lambda_{n-1}(\textbf{L})
-    \\] \\[\textbf{Constrained by } 
+    \\] \\[\textbf{Constrained by: } \\]\\[
     \sum_{i,j}^{n} \textbf{D}\_{ij} \textbf{W}\_{ij}=c \hspace{0.5cm} \boldsymbol{\forall} i,j \text{ with } \eta_{ij} = 1 \\]\\[
     \textbf{L} = \sum_{i,j}^{n} \textbf{W}\_{ij} \textbf{E}^{\{ij\}} \hspace{0.5cm} \boldsymbol{\forall} i,j \text{ with } \eta_{ij} = 1 \\]\\[
     c > 0
