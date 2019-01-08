@@ -59,7 +59,7 @@ that correlation PCA requires features to be re-scaled to the unit norm
 before the formulation of \\(\textbf{C}\\), otherwise covariance PCA is
 being applied . The covariance/correlation matrix can be constructed
 using: \\[\begin{aligned}
-            \textbf{C} = \frac{1}{n}\sum_{i=1}^{n} \textbf{x}_{i}\textbf{x}_{i}^{T}
+            \textbf{C} = \frac{1}{n}\sum_{i=1}^{n} \textbf{x}\_{i}\textbf{x}\_{i}^{T}
         \end{aligned}\\] This matrix will contain the respective
 correlation or covariance between each feature in the space, with
 diagonal containing either ones or the variance of each feature. As
@@ -81,60 +81,60 @@ orthogonal. This simplifies the extraction of components to picking the
 corresponding principle components contained in the columns of
 \\(\textbf{E}\\). The reduced matrices containing only the \\(k\\) principle
 components and their respective eigenvalues are denoted as
-\\(\textbf{E}_{k}\\) and \\(\Lambda_{k}\\) respectively. The original data
+\\(\textbf{E}\_{k}\\) and \\(\Lambda_{k}\\) respectively. The original data
 can then be projected into the space defined by the primary components
 by using the eigenvectors to inform the reconstruction of the sample as
 a linear combination of its original features: \\[\begin{aligned}
-            \textbf{y}_{i} = \textbf{x}_{i}\textbf{E}_{k}
-        \end{aligned}\\] where \\(\textbf{y}_{i}\\) is the \\(1 \times k\\)
-sample projection, \\(\textbf{x}_{i}\\) is the \\(1 \times d\\) sample in
-the original space and \\(\textbf{E}_{k}\\) is the reduced \\(d \times k\\)
+            \textbf{y}\_{i} = \textbf{x}\_{i}\textbf{E}\_{k}
+        \end{aligned}\\] where \\(\textbf{y}\_{i}\\) is the \\(1 \times k\\)
+sample projection, \\(\textbf{x}\_{i}\\) is the \\(1 \times d\\) sample in
+the original space and \\(\textbf{E}\_{k}\\) is the reduced \\(d \times k\\)
 matrix of eigenvectors. This transformation can be shown to de-correlate
 the projected data, minimise the \\(L_{2}\\)-norm between
-\\(\textbf{y}_{i}\\) and \\(\textbf{x}_{i}\\) and allow the construction of
+\\(\textbf{y}\_{i}\\) and \\(\textbf{x}\_{i}\\) and allow the construction of
 any eigenvector via a linear combination of the original samples. 
 
 ### Kernalised
 
 The application of PCA can be extend using a kernel function. To achieve
 this the covariance matrix \\(\textbf{C}\\) is re-formulated in terms of
-the \\(\phi(\textbf{x}_{i})\\), which is the transformation function
-\\(\phi\\) applied to the sample \\(\textbf{x}_{i}\\). Next the
+the \\(\phi(\textbf{x}\_{i})\\), which is the transformation function
+\\(\phi\\) applied to the sample \\(\textbf{x}\_{i}\\). Next the
 corresponding eigenvectors of \\(\textbf{C}\\) are written as a linear
 combination of the now transformed samples: \\[\begin{aligned}
-            \textbf{C} &= \frac{1}{n}\sum_{i=1}^{n} \phi(\textbf{x}_{i}) \phi(\textbf{x}_{i})^{T}
+            \textbf{C} &= \frac{1}{n}\sum_{i=1}^{n} \phi(\textbf{x}\_{i}) \phi(\textbf{x}\_{i})^{T}
         \end{aligned}\\] \\[\begin{aligned}
-            \textbf{v}_{k} &= \sum_{i=1}^{n} \alpha_{ki} \phi(\textbf{x}_{i})
+            \textbf{v}\_{k} &= \sum_{i=1}^{n} \alpha_{ki} \phi(\textbf{x}\_{i})
         \label{eq:kernelVec}
-        \end{aligned}\\] Where \\(\textbf{v}_{k}\\) is the \\(k^{th}\\)
+        \end{aligned}\\] Where \\(\textbf{v}\_{k}\\) is the \\(k^{th}\\)
 eigenvector of \\(\textbf{C}\\). The two above results can be used to
 expand the eigenvalue equation: \\[\begin{aligned}
-            \textbf{v}_{k}\textbf{C} = \lambda_{k} \textbf{v}_{k} \\
-            \sum_{j=1}^{n} \alpha_{kj} \phi(\textbf{x}_{j}) \frac{1}{n}\sum_{i=1}^{n} \phi(\textbf{x}_{i}) \phi(\textbf{x}_{i})^{T} &= \lambda_{k} \sum_{i=1}^{n} \alpha_{ki} \phi(\textbf{x}_{i})
+            \textbf{v}\_{k}\textbf{C} = \lambda_{k} \textbf{v}\_{k} \\
+            \sum_{j=1}^{n} \alpha_{kj} \phi(\textbf{x}\_{j}) \frac{1}{n}\sum_{i=1}^{n} \phi(\textbf{x}\_{i}) \phi(\textbf{x}\_{i})^{T} &= \lambda_{k} \sum_{i=1}^{n} \alpha_{ki} \phi(\textbf{x}\_{i})
         \end{aligned}\\] Multiplying through by
-\\(\phi(\textbf{x}_{l})^{T}\\) \\[\begin{aligned}
-             \frac{1}{n}\sum_{i=1}^{n} \phi(\textbf{x}_{l})^{T} \phi(\textbf{x}_{i}) \sum_{j=1}^{n} \alpha_{kj} \phi(\textbf{x}_{i})^{T} \phi(\textbf{x}_{j}) &= \lambda_{k} \sum_{i=1}^{n} \alpha_{ki} \phi(\textbf{x}_{l})^{T} \phi(\textbf{x}_{i})
+\\(\phi(\textbf{x}\_{l})^{T}\\) \\[\begin{aligned}
+             \frac{1}{n}\sum_{i=1}^{n} \phi(\textbf{x}\_{l})^{T} \phi(\textbf{x}\_{i}) \sum_{j=1}^{n} \alpha_{kj} \phi(\textbf{x}\_{i})^{T} \phi(\textbf{x}\_{j}) &= \lambda_{k} \sum_{i=1}^{n} \alpha_{ki} \phi(\textbf{x}\_{l})^{T} \phi(\textbf{x}\_{i})
         \end{aligned}\\] Now the kernel function is defined such that
-\\(K(\textbf{x}_{i}, \textbf{x}_j) = \phi(\textbf{x}_{i})^{T} \phi(\textbf{x}_{j})\\)
+\\(K(\textbf{x}\_{i}, \textbf{x}\_j) = \phi(\textbf{x}\_{i})^{T} \phi(\textbf{x}\_{j})\\)
 and substituted: \\[\begin{aligned}
-            \frac{1}{n}\sum_{i=1}^{n} K(\textbf{x}_{i}, \textbf{x}_j) \sum_{j=1}^{n} \alpha_{kj} K(\textbf{x}_{i}, \textbf{x}_j) &= \lambda_{k} \sum_{i=1}^{n} \alpha_{ki} K(\textbf{x}_{i}, \textbf{x}_j)
+            \frac{1}{n}\sum_{i=1}^{n} K(\textbf{x}\_{i}, \textbf{x}\_j) \sum_{j=1}^{n} \alpha_{kj} K(\textbf{x}\_{i}, \textbf{x}\_j) &= \lambda_{k} \sum_{i=1}^{n} \alpha_{ki} K(\textbf{x}\_{i}, \textbf{x}\_j)
         \end{aligned}\\] Which can now be written in matrix notation,
 using the kernel matrix \\(\textbf{K}\\) with elements
-\\(\textbf{K}_{i,j}=K(\textbf{x}_{i}, \textbf{x}_j)\\) as:
+\\(\textbf{K}\_{i,j}=K(\textbf{x}\_{i}, \textbf{x}\_j)\\) as:
 \\[\begin{aligned}
-            \textbf{K}^{2}\boldsymbol{\alpha}_{k} &= n \lambda_{k} \textbf{K} \boldsymbol{\alpha}_{k}
+            \textbf{K}^{2}\boldsymbol{\alpha}\_{k} &= n \lambda_{k} \textbf{K} \boldsymbol{\alpha}\_{k}
         \end{aligned}\\] By pre-multiplying by the inverse of
 \\(\textbf{K}\\) an equation that can be solved to find the vector of
-weights \\(\boldsymbol{\alpha}_{k}\\) is given: \\[\begin{aligned}
-            \textbf{K}\boldsymbol{\alpha}_{k} &= n \lambda_{k}\boldsymbol{\alpha}_{k}
-        \end{aligned}\\] Once \\(\boldsymbol{\alpha}_{k}\\) has been
+weights \\(\boldsymbol{\alpha}\_{k}\\) is given: \\[\begin{aligned}
+            \textbf{K}\boldsymbol{\alpha}\_{k} &= n \lambda_{k}\boldsymbol{\alpha}\_{k}
+        \end{aligned}\\] Once \\(\boldsymbol{\alpha}\_{k}\\) has been
 determined its elements can be used to find the eigenvectors using
 equation ([\\[eq:kernelVec\\]](#eq:kernelVec)). The projection of a sample
 into the new space can be computed by: \\[\begin{aligned}
-            \phi(\textbf{x}_{i})^{T} \textbf{V}^{k}  &= \sum_{i=1}^{n} \boldsymbol{\alpha}_{i} K(\textbf{x}, \textbf{x}_{i})
+            \phi(\textbf{x}\_{i})^{T} \textbf{V}^{k}  &= \sum_{i=1}^{n} \boldsymbol{\alpha}\_{i} K(\textbf{x}, \textbf{x}\_{i})
         \end{aligned}\\] Where \\(\textbf{V}^{k}\\) is the matrix of the
 \\(k\\) eigenvectors with the largest eigenvalues and
-\\(\boldsymbol{\alpha}_{i}\\) are the coefficients used to form the
+\\(\boldsymbol{\alpha}\_{i}\\) are the coefficients used to form the
 \\(k^{th}\\) eigenvector from samples in the original space. In this way
 the projection of a sample into the reduced space requires the pair-wise
 kernel matrix and weights \\(\alpha\\), thus the explicit evaluation of
@@ -142,8 +142,8 @@ kernel matrix and weights \\(\alpha\\), thus the explicit evaluation of
 data may not be centred, this can be accounted for by centring the
 kernel. It can be shown that the centred kernel depends only on the
 non-centred kernel and is found by: \\[\begin{aligned}
-            K_{c}(\textbf{x}_{i}, \textbf{x}_{j}) &= K(\textbf{x}_{i}, \textbf{x}_{j}) - k(\textbf{x}_{i})\textbf{1}_{j}^{T} - \textbf{1}_{i} k(\textbf{x}_{j})^{T} + \ell\textbf{1}_{i}\textbf{1}_{j}^{T} \\
-            & \text{with } k_{i} = \frac{1}{n} \sum_{i=1}^{n} \textbf{K}_{i,j} \\
+            K_{c}(\textbf{x}\_{i}, \textbf{x}\_{j}) &= K(\textbf{x}\_{i}, \textbf{x}\_{j}) - k(\textbf{x}\_{i})\textbf{1}\_{j}^{T} - \textbf{1}\_{i} k(\textbf{x}\_{j})^{T} + \ell\textbf{1}\_{i}\textbf{1}\_{j}^{T} \\
+            & \text{with } k_{i} = \frac{1}{n} \sum_{i=1}^{n} \textbf{K}\_{i,j} \\
             & \text{and } \ell = \frac{1}{n^{2}} \sum_{i,j =1}^{n}\textbf{K}\_{i,j}
         \end{aligned}\\] 
 
@@ -176,69 +176,69 @@ overarching goal is LDA is that if two classes existing in the data a
 transform that clusters like samples closely while maximising the
 distance between the cluster is desired for ease of separation by some
 classification boundary. Towards this end we define the between and
-within class scatter matrices \\(\textbf{S}_{B}\\) and \\(\textbf{S}_{W}\\)
+within class scatter matrices \\(\textbf{S}\_{B}\\) and \\(\textbf{S}\_{W}\\)
 respectively, as follows: \\[\begin{aligned}
-    \textbf{S}_{B} &= (\textbf{m}_{1}-\textbf{m}_{2})(\textbf{m}_{1}-\textbf{m}_{2})^{T} \\
-    \textbf{S}_{W} &= \sum_{j=1}^{2}\sum_{i=1}^{n_{j}}(\textbf{x}-\textbf{m}_{j})(\textbf{x}-\textbf{m}_{j})^{T} \\
-    \text{where } \textbf{m}_{j} &= \frac{1}{n_{i}} \sum_{i=1}^{n_{i}}\textbf{x}_{i}^{j}
+    \textbf{S}\_{B} &= (\textbf{m}\_{1}-\textbf{m}\_{2})(\textbf{m}\_{1}-\textbf{m}\_{2})^{T} \\
+    \textbf{S}\_{W} &= \sum_{j=1}^{2}\sum_{i=1}^{n_{j}}(\textbf{x}-\textbf{m}\_{j})(\textbf{x}-\textbf{m}\_{j})^{T} \\
+    \text{where } \textbf{m}\_{j} &= \frac{1}{n_{i}} \sum_{i=1}^{n_{i}}\textbf{x}\_{i}^{j}
     \end{aligned}\\] A vector \\(\textbf{w}\\) is defined that will be
 optimised such that along its span the inter-class distance is maximised
 and the intra-class variance in minimised using the following
 formulation: \\[\begin{aligned}
-    \textbf{Maximise  } \textbf{J}(\textbf{w}) = \frac{\textbf{w}^{T}\textbf{S}_{B} \textbf{w}}{\textbf{w}^{T}\textbf{S}_{W} \textbf{w}}
+    \textbf{Maximise  } \textbf{J}(\textbf{w}) = \frac{\textbf{w}^{T}\textbf{S}\_{B} \textbf{w}}{\textbf{w}^{T}\textbf{S}\_{W} \textbf{w}}
     \end{aligned}\\] By maximising the above function the denominator
 that reflects the component of within class variance is minimised and
 the numerator corresponding to between class difference is maximised
 simultaneously. The optimised \\(\textbf{w}\\) represents a basis vector
 in the reduced space. The optimal \\(\textbf{w}\\) can be found by finding
 the number dimensions of the reduced space in eigenvectors that have the
-largest eigenvalues of the matrix \\(\textbf{S}_{W}^{-1}\textbf{S}_{B}\\).
+largest eigenvalues of the matrix \\(\textbf{S}\_{W}^{-1}\textbf{S}\_{B}\\).
 New samples can be embedded into the space by calculating their
 projections onto \\(\textbf{w}\\): \\[\begin{aligned}
-    \textbf{y}_{i} = \textbf{w} \cdot \textbf{x}\_{i}
+    \textbf{y}\_{i} = \textbf{w} \cdot \textbf{x}\_{i}
     \end{aligned}\\]
 
 ### Kernel
 
 To further extend LDA to situations where the best basis of the space is
 not linear the kernel trick can be used. As before the problem is
-redefined in terms of \\(\phi(\textbf{x}_{i})\\), which is the
+redefined in terms of \\(\phi(\textbf{x}\_{i})\\), which is the
 transformation function \\(\phi\\) applied to the sample
-\\(\textbf{x}_{i}\\): \\[\begin{aligned}
-    \textbf{S}_{B}^{\phi} &= (\textbf{m}_{1}^{\phi}-\textbf{m}_{2}^{\phi})(\textbf{m}_{1}^{\phi}-\textbf{m}_{2}^{\phi})^{T} \\
-    \textbf{S}_{W}^{\phi} &= \sum_{j=1}^{2}\sum_{i=1}^{n_{j}}(\phi(\textbf{x})-\textbf{m}_{j}^{\phi})(\phi(\textbf{x})-\textbf{m}_{j}^{\phi})^{T} \\
-    \text{where } \textbf{m}_{j}^{\phi} &= \frac{1}{n_{j}} \sum_{i=1}^{n_{j}}\phi(\textbf{x}_{i}^{j}) \\
-    \textbf{Maximise  } \textbf{J}(\textbf{w}) &= \frac{\textbf{w}^{T}\textbf{S}_{B}^{\phi} \textbf{w}}{\textbf{w}^{T}\textbf{S}_{W}^{\phi} \textbf{w}}
+\\(\textbf{x}\_{i}\\): \\[\begin{aligned}
+    \textbf{S}\_{B}^{\phi} &= (\textbf{m}\_{1}^{\phi}-\textbf{m}\_{2}^{\phi})(\textbf{m}\_{1}^{\phi}-\textbf{m}\_{2}^{\phi})^{T} \\
+    \textbf{S}\_{W}^{\phi} &= \sum_{j=1}^{2}\sum_{i=1}^{n_{j}}(\phi(\textbf{x})-\textbf{m}\_{j}^{\phi})(\phi(\textbf{x})-\textbf{m}\_{j}^{\phi})^{T} \\
+    \text{where } \textbf{m}\_{j}^{\phi} &= \frac{1}{n_{j}} \sum_{i=1}^{n_{j}}\phi(\textbf{x}\_{i}^{j}) \\
+    \textbf{Maximise  } \textbf{J}(\textbf{w}) &= \frac{\textbf{w}^{T}\textbf{S}\_{B}^{\phi} \textbf{w}}{\textbf{w}^{T}\textbf{S}\_{W}^{\phi} \textbf{w}}
     \end{aligned}\\] In order to reduce the need to explicitly transform
 every sample in the set using the function \\(\phi\\) a form that involves
 only the inner products between the transformed samples is sought.
 Firstly, \\(\textbf{w}\\) is expressed as a linear combination of samples:
 \\[\begin{aligned}
-    \textbf{w} = \sum_{k=1}^{n} \alpha_{k}\phi(\textbf{x}_{k})
+    \textbf{w} = \sum_{k=1}^{n} \alpha_{k}\phi(\textbf{x}\_{k})
     \end{aligned}\\] Which is then used to modify the equation for
-\\(\textbf{m}_{j}^{\phi}\\): \\[\begin{aligned}
-    \textbf{w}^{T}\textbf{m}_{j}^{\phi}= \sum_{k=1}^{n} \alpha_{k}\phi(\textbf{x}_{k})^{T} \frac{1}{n_{j}} \sum_{i=1}^{n_{j}}\phi(\textbf{x}_{i}^{j}) \\
-    \textbf{w}^{T}\textbf{m}_{j}^{\phi}= \frac{1}{n_{j}}\sum_{k=1}^{n}\sum_{i=1}^{n}_{j}\alpha_{k}\phi(\textbf{x}_{k})^{T}\phi(\textbf{x}_{i}^{j})
+\\(\textbf{m}\_{j}^{\phi}\\): \\[\begin{aligned}
+    \textbf{w}^{T}\textbf{m}\_{j}^{\phi}= \sum_{k=1}^{n} \alpha_{k}\phi(\textbf{x}\_{k})^{T} \frac{1}{n_{j}} \sum_{i=1}^{n_{j}}\phi(\textbf{x}\_{i}^{j}) \\
+    \textbf{w}^{T}\textbf{m}\_{j}^{\phi}= \frac{1}{n_{j}}\sum_{k=1}^{n}\sum_{i=1}^{n}\_{j}\alpha_{k}\phi(\textbf{x}\_{k})^{T}\phi(\textbf{x}\_{i}^{j})
     \end{aligned}\\] Then the kernel function \\(k\\) is defined as
-\\(k(\textbf{x}_{i},\textbf{x}_{k}) = \phi(\textbf{x}_{k})^{T}\phi(\textbf{x}_{i})\\)
+\\(k(\textbf{x}\_{i},\textbf{x}\_{k}) = \phi(\textbf{x}\_{k})^{T}\phi(\textbf{x}\_{i})\\)
 giving: \\[\begin{aligned}
-    \textbf{w}^{T}\textbf{m}_{j}^{\phi}= \frac{1}{n_{j}}\sum_{k=1}^{n}\sum_{i=1}^{n}_{j}\alpha_{k}k(\textbf{x}_{i},\textbf{x}_{k}^{j})
+    \textbf{w}^{T}\textbf{m}\_{j}^{\phi}= \frac{1}{n_{j}}\sum_{k=1}^{n}\sum_{i=1}^{n}\_{j}\alpha_{k}k(\textbf{x}\_{i},\textbf{x}\_{k}^{j})
     \end{aligned}\\] Which can be rewritten in matrix form as:
 \\[\begin{aligned}
-    \boldsymbol{\alpha}^{T}\textbf{M}_{i}
+    \boldsymbol{\alpha}^{T}\textbf{M}\_{i}
     \end{aligned}\\] This can now be used to re-write the numerator in
 the objective function, with
-\\(\textbf{M}=(\textbf{M}_{1}-\textbf{M}_{2})(\textbf{M}_{1}-\textbf{M}_{2})^{T}\\),
+\\(\textbf{M}=(\textbf{M}\_{1}-\textbf{M}\_{2})(\textbf{M}\_{1}-\textbf{M}\_{2})^{T}\\),
 as: \\[\begin{aligned}
-    \textbf{w}^{T}\textbf{S}_{B}^{\phi} \textbf{w} = \boldsymbol{\alpha}^{T}\textbf{M}\boldsymbol{\alpha}
+    \textbf{w}^{T}\textbf{S}\_{B}^{\phi} \textbf{w} = \boldsymbol{\alpha}^{T}\textbf{M}\boldsymbol{\alpha}
     \end{aligned}\\] Similarly the revised form of
-\\(\textbf{m}_{j}^{\phi}\\) can be used to re-write the detonator:
+\\(\textbf{m}\_{j}^{\phi}\\) can be used to re-write the detonator:
 \\[\begin{aligned}
-    \textbf{w}^{T}\textbf{S}_{W}^{\phi} \textbf{w} = \boldsymbol{\alpha}^{T}\textbf{N}\boldsymbol{\alpha}
+    \textbf{w}^{T}\textbf{S}\_{W}^{\phi} \textbf{w} = \boldsymbol{\alpha}^{T}\textbf{N}\boldsymbol{\alpha}
     \end{aligned}\\] where
-\\(\textbf{N} = \sum_{j=1}^{2} \textbf{K}_{j}(\textbf{I}-\textbf{1}_{n_{j}})\textbf{K}_{j}^{T}\\)
+\\(\textbf{N} = \sum_{j=1}^{2} \textbf{K}\_{j}(\textbf{I}-\textbf{1}\_{n_{j}})\textbf{K}\_{j}^{T}\\)
 and \\(\textbf{K{}}\\) is a \\(n \times n_{j}\\) matrix with elements
-\\((\textbf{K}_{j})_{lm}=k(\textbf{x}_{l},\textbf{x}_{m}^{j})\\). This
+\\((\textbf{K}\_{j})_{lm}=k(\textbf{x}\_{l},\textbf{x}\_{m}^{j})\\). This
 gives the reformulation of the function to be optimised as:
 \\[\begin{aligned}
     \textbf{Maximise  } \textbf{J}(\boldsymbol{\alpha}) &= \frac{\boldsymbol{\alpha}^{T}\textbf{M} \boldsymbol{\alpha}}{\boldsymbol{\alpha}^{T}\textbf{N} \boldsymbol{\alpha}}
@@ -247,7 +247,7 @@ eigenvectors of \\(\textbf{N}^{-1}\textbf{M}\\) to form
 \\(\boldsymbol{\alpha}\\) which is then used to map samples from the
 original space via a linear combination of value of the kernel function:
 \\[\begin{aligned}
-    \textbf{y}_{j} = \textbf{w} \cdot \textbf{x}_{j} = \sum_{i=1}^{n} \alpha_{i}k(\textbf{x}_{i},\textbf{x}_{j})
+    \textbf{y}\_{j} = \textbf{w} \cdot \textbf{x}\_{j} = \sum_{i=1}^{n} \alpha_{i}k(\textbf{x}\_{i},\textbf{x}\_{j})
     \end{aligned}\\] By adding a multiple of the identity to the matrix
 \\(\textbf{N}\\) numerically the problem becomes more stable.
 \\(\textbf(N)\_{\mu} =\textbf{N}+\mu\textbf{I}\\) is suggested as a
@@ -291,11 +291,11 @@ Formally this can be expressed as a quadratic programming problem
 naively maximising the distance between all points globally under the
 constraint that the distances between neighbours are preserved:
 \\[\begin{aligned}
-        \textbf{Maximise  } \sum_{i,j=1}^{n}||\textbf{y}_{i}-\textbf{y}_{j}||^{2}
+        \textbf{Maximise  } \sum_{i,j=1}^{n}||\textbf{y}\_{i}-\textbf{y}\_{j}||^{2}
     \end{aligned}\\] \\[\textbf{Constrained by } 
     \begin{cases}
-        ||\textbf{y}_{i}-\textbf{y}_j||^{2} = ||\textbf{x}_{i}-\textbf{x}_{j}||^{2} \hspace{0.5cm} \boldsymbol{\forall} i,j \text{ with } \eta_{ij} = 1 \\
-        \sum_{i=1}^{n} \textbf{y}_{i}=0
+        ||\textbf{y}\_{i}-\textbf{y}\_j||^{2} = ||\textbf{x}\_{i}-\textbf{x}\_{j}||^{2} \hspace{0.5cm} \boldsymbol{\forall} i,j \text{ with } \eta_{ij} = 1 \\
+        \sum_{i=1}^{n} \textbf{y}\_{i}=0
     \end{cases}\\] Where \\(\textbf{y}\\) and \\(\textbf{x}\\) or the
 embedded and original samples respectively and \\(\eta_{ij}\\) is one when
 \\(i\\) and \\(j\\) are neighbouring or zero otherwise.  Unfortunately this
@@ -307,11 +307,11 @@ that the above problem can be re-written in terms of the Gram matrix
     \end{aligned}\\] \\[\textbf{Constrained by } 
     \begin{cases}
         \textbf{K} \succeq 0 \\
-        \sum_{i,j=1}^{n} \textbf{K}_{ij}=0 \hspace{0.5cm} \boldsymbol{\forall} i,j \text{ with } \eta_{ij} = 1 \text{ or } [\eta^{T}\eta]_{ij} = 1 \\
-        \textbf{K}_{ii} + \textbf{K}_{jj} - \textbf{K}_{ij} - \textbf{K}_{ji} = \textbf{G}_{ii} + \textbf{G}_{jj} - \textbf{G}_{ij} - \textbf{G}_{ji}
+        \sum_{i,j=1}^{n} \textbf{K}\_{ij}=0 \hspace{0.5cm} \boldsymbol{\forall} i,j \text{ with } \eta_{ij} = 1 \text{ or } [\eta^{T}\eta]_{ij} = 1 \\
+        \textbf{K}\_{ii} + \textbf{K}\_{jj} - \textbf{K}\_{ij} - \textbf{K}\_{ji} = \textbf{G}\_{ii} + \textbf{G}\_{jj} - \textbf{G}\_{ij} - \textbf{G}\_{ji}
     \end{cases}\\] Where
-\\(\textbf{G}_{ij} = \textbf{X}_{i} \cdot \textbf{X}_{j}\\) and
-\\(\textbf{K}_{ij} = \textbf{Y}_{i} \cdot \textbf{Y}\_{j}\\) are the Gram
+\\(\textbf{G}\_{ij} = \textbf{X}\_{i} \cdot \textbf{X}\_{j}\\) and
+\\(\textbf{K}\_{ij} = \textbf{Y}\_{i} \cdot \textbf{Y}\_{j}\\) are the Gram
 matrices for the input and output spaces respectively. Once this
 optimisation is complete the resulting output Gram matrix
 \\(\textbf{K}\\)’s \\(k\\) largest eigenvalue eigenvectors are used to
@@ -334,14 +334,14 @@ subject to the constraint that the weights of all edges of a sample sum
 to one. This constraint gives the local embedding invariance to the
 original spaces translation, rotation and scale. To calculate the exact
 weight of an edge the distance squared cost function: \\[\begin{aligned}
-    \epsilon(\textbf{W}) = \sum_{i=1}^{n} \left|\textbf{x}_{i}-\sum_{j=1}^{k}\textbf{W}_{ij}\textbf{x}_{j}\right|^{2}
+    \epsilon(\textbf{W}) = \sum_{i=1}^{n} \left|\textbf{x}\_{i}-\sum_{j=1}^{k}\textbf{W}\_{ij}\textbf{x}\_{j}\right|^{2}
     \end{aligned}\\] Where n is the total number of samples in the
 original space and k is each point’s number of neighbours, is minimised.
 To construct the low dimensional embedding the weights found by in the
 initial optimisation are fixed and the same distance squared cost
-function is minimised for the embedded points \\(\textbf{y}_{i}\\):
+function is minimised for the embedded points \\(\textbf{y}\_{i}\\):
 \\[\begin{aligned}
-    \Phi(\textbf{y}) = \sum_{i=1}^{n} \left|\textbf{y}_{i}-\sum_{j=1}^{k}\textbf{W}_{ij}\textbf{y}_{j}\right|^{2}
+    \Phi(\textbf{y}) = \sum_{i=1}^{n} \left|\textbf{y}\_{i}-\sum_{j=1}^{k}\textbf{W}\_{ij}\textbf{y}\_{j}\right|^{2}
     \end{aligned}\\] The solution to this optimisation problem can be
 found by taking the \\(k\\) lowest non-zero eigenvectors of the sparse
 matrix of weights. When k-nearest neighbours is used the algorithm only
@@ -399,16 +399,16 @@ transform to: \\[\begin{aligned}
     \textbf{Maximise } \lambda_{n-1}(\textbf{L})
     \end{aligned}\\] \\[\textbf{Constrained by } 
     \begin{cases}
-    \sum_{i,j}^{n} \textbf{D}_{ij} \textbf{W}_{ij}=c \hspace{0.5cm} \boldsymbol{\forall} i,j \text{ with } \eta_{ij} = 1 \\
-    \textbf{L} = \sum_{i,j}^{n} \textbf{W}_{ij} \textbf{E}^{\{ij\}} \hspace{0.5cm} \boldsymbol{\forall} i,j \text{ with } \eta_{ij} = 1 \\
+    \sum_{i,j}^{n} \textbf{D}\_{ij} \textbf{W}\_{ij}=c \hspace{0.5cm} \boldsymbol{\forall} i,j \text{ with } \eta_{ij} = 1 \\
+    \textbf{L} = \sum_{i,j}^{n} \textbf{W}\_{ij} \textbf{E}^{\{ij\}} \hspace{0.5cm} \boldsymbol{\forall} i,j \text{ with } \eta_{ij} = 1 \\
     c > 0
     \end{cases}\\] Where \\(\lambda_{n-1}\\) is the second smallest
 eigenvalue, \\(\textbf{E}^{\{ij\}}\\) is an \\(n \times n\\) matrix with
 four non-zero values,
-\\(\textbf{E}^{\{ij\}}_{ii} = \textbf{E}^{\{ij\}}_{jj} = 1\\) and
-\\(\textbf{E}^{\{ij\}}_{ij} = \textbf{E}^{\{ij\}}_{ji} = -1\\),
+\\(\textbf{E}^{\{ij\}}\_{ii} = \textbf{E}^{\{ij\}}\_{jj} = 1\\) and
+\\(\textbf{E}^{\{ij\}}\_{ij} = \textbf{E}^{\{ij\}}\_{ji} = -1\\),
 \\(\textbf{W}\\) is an \\(n \times n\\) matrix with elements
-\\(\textbf{W}_{ij}\\) are the same as the values of \\(\eta_{ij}\\) and
+\\(\textbf{W}\_{ij}\\) are the same as the values of \\(\eta_{ij}\\) and
 \\(\textbf{D}\_{ij} = Trace(\textbf{K}\textbf{E}^{\{ij\}})\\). The solution
 to the dual problem is optimal for the primal if and only if they
 satisfy the Karush-Kuhn-Tucker conditions of primal and dual feasibility
