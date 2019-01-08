@@ -218,11 +218,11 @@ Firstly, \(\textbf{w}\) is expressed as a linear combination of samples:
     \end{aligned}\] Which is then used to modify the equation for
 \(\textbf{m}_{j}^{\phi}\): \[\begin{aligned}
     \textbf{w}^{T}\textbf{m}_{j}^{\phi}= \sum_{k=1}^{n} \alpha_{k}\phi(\textbf{x}_{k})^{T} \frac{1}{n_{j}} \sum_{i=1}^{n_{j}}\phi(\textbf{x}_{i}^{j}) \\
-    \textbf{w}^{T}\textbf{m}_{j}^{\phi}= \frac{1}{n_{j}}\sum_{k=1}^{n}\sum_{i=1}^{{n}_{j}}\alpha_{k}\phi(\textbf{x}_{k})^{T}\phi(\textbf{x}_{i}^{j})
+    \textbf{w}^{T}\textbf{m}_{j}^{\phi}= \frac{1}{n_{j}}\sum_{k=1}^{n}\sum_{i=1}^{n}_{j}\alpha_{k}\phi(\textbf{x}_{k})^{T}\phi(\textbf{x}_{i}^{j})
     \end{aligned}\] Then the kernel function \(k\) is defined as
 \(k(\textbf{x}_{i},\textbf{x}_{k}) = \phi(\textbf{x}_{k})^{T}\phi(\textbf{x}_{i})\)
 giving: \[\begin{aligned}
-    \textbf{w}^{T}\textbf{m}_{j}^{\phi}= \frac{1}{n_{j}}\sum_{k=1}^{n}\sum_{i=1}^{{n}_{j}}\alpha_{k}k(\textbf{x}_{i},\textbf{x}_{k}^{j})
+    \textbf{w}^{T}\textbf{m}_{j}^{\phi}= \frac{1}{n_{j}}\sum_{k=1}^{n}\sum_{i=1}^{n}_{j}\alpha_{k}k(\textbf{x}_{i},\textbf{x}_{k}^{j})
     \end{aligned}\] Which can be rewritten in matrix form as:
 \[\begin{aligned}
     \boldsymbol{\alpha}^{T}\textbf{M}_{i}
