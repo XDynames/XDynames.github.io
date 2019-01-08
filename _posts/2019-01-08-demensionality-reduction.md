@@ -306,11 +306,11 @@ that the above problem can be re-written in terms of the Gram matrix
         \textbf{Maximise }\text{Trace($\textbf{K}$)}
     \end{aligned}\\] \\[\textbf{Constrained by } 
     \begin{cases}
+    \begin{multline}
         \textbf{K} \succeq 0 \\
-        
         \sum_{i,j=1}^{n} \textbf{K}\_{ij}=0 \hspace{0.5cm} \boldsymbol{\forall} i,j \text{ with } \eta_{ij} = 1 \text{ or } [\eta^{T}\eta]\_{ij} = 1 \\
-
         \textbf{K}\_{ii} + \textbf{K}\_{jj} - \textbf{K}\_{ij} - \textbf{K}\_{ji} = \textbf{G}\_{ii} + \textbf{G}\_{jj} - \textbf{G}\_{ij} - \textbf{G}\_{ji}
+        \end{multline}
     \end{cases}\\] Where
 \\(\textbf{G}\_{ij} = \textbf{X}\_{i} \cdot \textbf{X}\_{j}\\) and
 \\(\textbf{K}\_{ij} = \textbf{Y}\_{i} \cdot \textbf{Y}\_{j}\\) are the Gram
