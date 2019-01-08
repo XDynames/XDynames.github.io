@@ -307,7 +307,9 @@ that the above problem can be re-written in terms of the Gram matrix
     \end{aligned}\\] \\[\textbf{Constrained by } 
     \begin{cases}
         \textbf{K} \succeq 0 \\
+        
         \sum_{i,j=1}^{n} \textbf{K}\_{ij}=0 \hspace{0.5cm} \boldsymbol{\forall} i,j \text{ with } \eta_{ij} = 1 \text{ or } [\eta^{T}\eta]\_{ij} = 1 \\
+
         \textbf{K}\_{ii} + \textbf{K}\_{jj} - \textbf{K}\_{ij} - \textbf{K}\_{ji} = \textbf{G}\_{ii} + \textbf{G}\_{jj} - \textbf{G}\_{ij} - \textbf{G}\_{ji}
     \end{cases}\\] Where
 \\(\textbf{G}\_{ij} = \textbf{X}\_{i} \cdot \textbf{X}\_{j}\\) and
