@@ -214,8 +214,9 @@ $$\begin{aligned}
     \textbf{S}_{B}^{\phi} &= (\textbf{m}_{1}^{\phi}-\textbf{m}_{2}^{\phi})(\textbf{m}_{1}^{\phi}-\textbf{m}_{2}^{\phi})^{T} \\
     \textbf{S}_{W}^{\phi} &= \sum_{j=1}^{2}\sum_{i=1}^{n_{j}}(\phi(\textbf{x})-\textbf{m}_{j}^{\phi})(\phi(\textbf{x})-\textbf{m}_{j}^{\phi})^{T} \\
     \text{where } \textbf{m}_{j}^{\phi} &= \frac{1}{n_{j}} \sum_{i=1}^{n_{j}}\phi(\textbf{x}_{i}^{j}) \\
-    \textbf{Maximise  } \textbf{J}(\textbf{w}) &= \frac{\textbf{w}^{T}\textbf{S}_{B}^{\phi} \textbf{w}}{\textbf{w}^{T}\textbf{S}_{W}^{\phi} \textbf{w}}
-    \end{aligned}$$ In order to reduce the need to explicitly transform
+    \textbf{Maximise  } \textbf{J}(\textbf{w}) &= \frac{\textbf{w}^{T}\textbf{S}_{B}^{\phi} \textbf{w}{\textbf{w}^{T}\textbf{S}_{W}^{\phi} \textbf{w}}
+    \end{aligned}$$ 
+In order to reduce the need to explicitly transform
 every sample in the set using the function $\phi$ a form that involves
 only the inner products between the transformed samples is sought.
 Firstly, $\textbf{w}$ is expressed as a linear combination of samples:
