@@ -43,8 +43,8 @@ Leveled factors and numerical variables are then subjected to missing value anal
 
 As missing values in numerical data can often be encoded as zeros, these variables where tested for zero content. This revealed that the highest zero value content, 3.5%, is observed in the Popularity variable and 0.25% where found in the case of danceability. These low levels of zero content are likely appropriate for the given variables and are left unchanged.
 
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project/Frequency of NA and Zero-1.png" alt="Bar charts showing the frequency of missing values (left) and zero values (right) as a percentage of overall observations." width="200"/> 
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project/Frequency of NA and Zero-2.png" alt="Bar charts showing the frequency of missing values (left) and zero values (right) as a percentage of overall observations." width="200" />
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project/Frequency of NA and Zero-1.png" alt="Bar charts showing the frequency of missing values (left) and zero values (right) as a percentage of overall observations." width="200" height="200"/> 
+<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project/Frequency of NA and Zero-2.png" alt="Bar charts showing the frequency of missing values (left) and zero values (right) as a percentage of overall observations." width="200" height="200" />
 
 <p class="caption">
 Bar charts showing the frequency of missing values (left) and zero values (right) as a percentage of overall observations.
