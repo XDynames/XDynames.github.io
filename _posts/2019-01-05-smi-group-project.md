@@ -149,11 +149,9 @@ Across the decades, the 50s and the 70s have a particularly dense amount of obse
 
 <img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//Corelation Matrix-1.png" width="0.75\linewidth" style="display: block; margin: auto;" />
 
-The correlation matrix above indicates a fairly strong correlation between the Energy and Loudness variables. No other variables look to have significant associations with one another.
+The correlation matrix above indicates a fairly strong correlation between the Energy and Loudness variables. No other variables look to have significant associations with one another. 
 
-A one
-
- was used to inform the scopes used in the subsequent model fitting processes. A specific scope was created with the terms identified as significant in the table. This was done to limit the available terms during modeling to those that already have a significant relationship between them and the predictor, reducing potential model complexity and computation. Additionally this excludes a large number of interaction terms that may otherwise be included in the model.
+Anova was used to inform the scope used in the subsequent model fitting processes. A specific scope was created with the terms identified as significant in the table. This was done to limit the available terms during modeling to those that already have a significant relationship between them and the predictor, reducing potential model complexity and computation. Additionally this excludes a large number of interaction terms that may otherwise be included in the model.
 
 6 Model Fitting
 ================
