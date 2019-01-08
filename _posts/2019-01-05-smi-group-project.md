@@ -68,23 +68,30 @@ Histograms of the popularity (left) and loudness (right) variables imported from
 
 Energy has an extremely low kurtosis, to the point that no easily identifiable mode. The examples are roughly uniformly distributed over the interval \[0.3, 0.9\] with a steep drop off in frequency either side of this interval, (left).
 
-Danceability displays a distribution that is approximately normal. There is a single mode at 0.6 and the kurtosis of the distribution appears to be normal (~3), (right).
-|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot2-1.png" alt="Histograms of the Energy (left) and Danceability (right) variables imported from Spotify." />|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot2-2.png" alt="Histograms of the Energy (left) and Danceability (right) variables imported from Spotify."/>|
+Danceability displays a distribution that is approximately normal. There is a single mode at 0.6 and the kurtosis of the distribution appears to be normal, (right).
+
+|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot2-1.png" alt="Histograms of the Energy (left) and Danceability (right) variables imported from Spotify."/>|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot2-2.png" alt="Histograms of the Energy (left) and Danceability (right) variables imported from Spotify."/>|
 <p class="caption">
 Histograms of the Energy (left) and Danceability (right) variables imported from Spotify.
 </p>
+
 <img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot3-1.png" width="0.49\linewidth" style="display: block; margin: auto;" />
+
 The figure above is a histogram of the Duration variable, which is the duration of songs in the Spotify dataset, measured in milliseconds. The distribution is unimodal with high kurtosis. There is a slight positive skew, with apparent outliers at the higher end of the distribution.
 ### 4.2 Catagorical Variables
  (left) indicates that Key has a strong mode in category C with other frequently sampled categories A, D and G. The Categories D\#, F\#, G\# are the least likely key for a song to be in.
 Mode shows a strong preference for songs to be written in major key as apposed to a minor.
-|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot4-1.png" alt="Bar charts of the Key (left) and Mode (right) variables imported from the Spotify set." />|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot4-2.png" alt="Bar charts of the Key (left) and Mode (right) variables imported from the Spotify set."/>
-<p class="caption">|
+
+|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot4-1.png" alt="Bar charts of the Key (left) and Mode (right) variables imported from the Spotify set."/>|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot4-2.png" alt="Bar charts of the Key (left) and Mode (right) variables imported from the Spotify set."/>|
+
+<p class="caption">
 Bar charts of the Key (left) and Mode (right) variables imported from the Spotify set.
 </p>
  (left) shows the number of tracks grouped by their respective time signatures. The most common time signature observed is 4 with about 1800 tracks The second most common time signature is 3 with around 250 tracks. Very few tracks have time signatures of 0, 1 and 5.
  (right) shows the number of tracks with respect to each decade analysed. The most common decade that songs originated from is the 50s, followed by the 70s, with about 600 and 550 songs respectively. The 60s, 80s, 90s, and 00s all have approximately 150 to 250 songs each.
-|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot5-1.png" alt="Barcharts of the Time Signature (left) and Decade (right) variables imported from the Spotify set."/>|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot5-2.png" alt="Barcharts of the Time Signature (left) and Decade (right) variables imported from the Spotify set." />|
+
+|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot5-1.png" alt="Barcharts of the Time Signature (left) and Decade (right) variables imported from the Spotify set."/>|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot5-2.png" alt="Barcharts of the Time Signature (left) and Decade (right) variables imported from the Spotify set."/>|
+
 <p class="caption">
 Barcharts of the Time Signature (left) and Decade (right) variables imported from the Spotify set.
 </p>
