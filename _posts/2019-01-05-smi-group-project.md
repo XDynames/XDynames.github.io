@@ -8,7 +8,7 @@ comments: false
 ---
 
 
-#1 Introduction
+1 Introduction
 ==============
 
 This century has so far been one of severe disruption for the recorded music industry. In 1999, the arrival of online file sharing service Napster heralded the beginning of the end for the recording industry's established business model. After peaking at $21.5bn in 1999, US recorded music revenues collapsed to just $6.9bn in 2015.[1] In the last three years, however, revenues have started to rise again, driven by the explosive growth of music streaming services such as Apple Music and Spotify.
@@ -17,7 +17,7 @@ The surge in popularity of music streaming offers leading service providers a we
 
 This paper will aim to develop a model for predicting a song's popularity using data from Spotify. We consider eight potential predictor variables for a song's popularity, and after performing uni-variate and bi-variate analyses, seek fit an optimal linear model to the data. After selecting the model, we assess the validity of the model's assumptions, and then use the model to predict a song's popularity given new data.
 
-#2 Data Decsription
+2 Data Decsription
 ==================
 
 To obtain the data used for analysis a function was used that accesses Spotify's database and extracts the songs for a list of artists given to it. The decade variable is added manually to each of the artists. These artists where chosen to be a representation of their respective decade; namely Elvis Presley, The Beatles, David Bowie, Micheal Jackson, Blur and Beyonce, representing the 50s, 60s, 70, 80s, 90, and 00s respectively.
@@ -30,7 +30,7 @@ The raw data contains 2081 observations of 21 variables. This initial data scrap
 | **Metrics**     | Popularity, Danceability, Energy, Loudness, Duration |
 | **Catagories**  | Key, Mode, Time Signature, Decade                    |
 
-#3 Cleaning
+3 Cleaning
 ==========
 
 ### 3.1 Loading and Type Assignment
@@ -51,7 +51,7 @@ Bar charts showing the frequency of missing values (left) and zero values (right
 
 The cleaned data has 2081 observations of 11 variables. However, two of the remaining variables are retained for interpretation and labeling only, namely Artist and Track Name, leaving 9 possible predictors.
 
-#4. Description of Variables
+4 Description of Variables
 ===========================
 
 ### 4.1 Continuous Variables
@@ -98,7 +98,7 @@ Bar charts of the Key (left) and Mode (right) variables imported from the Spotif
 Barcharts of the Time Signature (left) and Decade (right) variables imported from the Spotify set.
 </p>
 
-#5. Bivariate Analysis
+5 Bivariate Analysis
 =====================
 
 Bi-variate analysis is the simultaneous analysis of two variables to explore the relationship between them. This section contains bi-variate analyses of the Popularity variable against eight potential predictor variables from the `spotify` dataset.
@@ -155,7 +155,7 @@ A one
 
  was used to inform the scopes used in the subsequent model fitting processes. A specific scope was created with the terms identified as significant in the table. This was done to limit the available terms during modeling to those that already have a significant relationship between them and the predictor, reducing potential model complexity and computation. Additionally this excludes a large number of interaction terms that may otherwise be included in the model.
 
-#6. Model Fitting
+6 Model Fitting
 ================
 
 To fit the linear model, forward, backward and step-wise algorithms for model selection were all used, with both the Akaike Information Criterion (AIC) and Bayesian Information Criterion (BIC) as heuristics. Each of the model selection algorithms iteratively adds and/or removes terms using appropriate measures of significance, until the optimal model has been identified. The model with all terms available for inclusion is called the full model. The model with the least possible terms is the null model.
@@ -168,7 +168,7 @@ Using the first full model, where no interaction terms were included, led to the
 
 For the remaining two models, we found that the best models obtained from using the BIC heuristic contained substantially fewer terms than the those obtained under AIC. Despite being much smaller models, those obtained under the BIC heuristic were not penalised with higher significantly higher AIC or MSE scores. Therefore, it was determined that the final model would be selected from among those obtained using the BIC heuristic. Of these, the forward algorithm produced models with higher MSE than those of backward and step-wise. For the two remaining full models, backward and step-wise algorithms arrived at the same best model in each case. Of these two models, there was very little difference in MSE, so it was determined that the simplest model would be chosen as the final model.
 
-#7. Final Model
+7 Final Model
 ==============
 
 The results from the selection process indicate that the model obtained using the 'only significant terms' full model, then applying the backward (or step-wise) algorithm with the BIC heuristic, was the optimal choice. The formula for this model is:
@@ -179,7 +179,7 @@ The interaction terms included in this model were judged to be meaningful and th
 
 The coefficients for this model are presented in Table 5. The coefficients are the predicted change in popularity for an increase of 1 in the predictor term.
 
-#8. Assumption Checking
+8 Assumption Checking
 ======================
 
 The assumptions of the final linear model are:
@@ -212,12 +212,12 @@ Scatter plot of model residuals vs popularity, by artist.
 
 From the below plot, we see a clear pattern forming in the residuals. There seems to be a distinct hierarchy among the residuals, in that the residuals have formed "layers", with The Beatles and Elvis having the highest popularity for a given value of one of our residuals, followed by Beyonce, David Bowie, Blur and Elvis, in that order. In general, these distinct layers seem to not be violated, which suggest that the residuals are not truly random. This makes sense, since if an artist has a popular song, this may affect the popularity of other songs on that album, meaning the samples aren't truly independent, and hence the independence assumption is not satisfied.
 
-#9. Prediction
+9 Prediction
 =============
 
 Using the final model, the predicted popularity for a three minute song form the 90s in the key of C, with all other variables set to their sample mean, is 23.8. The confidence interval for this samples popularity is (21.25, 26.35)
 
-#10. Conclusion
+10 Conclusion
 ==============
 
 Nine potential predictor variables were considered to enable the construction of a linear regression model that would enable the prediction of a song's popularity. The data was loaded into the R Studio environment and examined for inconsistency. The dataset was adjusted to ensure a consistent and uniform database. Bi-variate and uni-variate analyses offered valuable insight into the type of data in the data set and relationships within the data set. Only two variables, Loudness and Energy, appeared strongly correlated.
