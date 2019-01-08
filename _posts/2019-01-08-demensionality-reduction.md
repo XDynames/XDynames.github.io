@@ -668,25 +668,25 @@ Bibliography
 ================
 Adbi, H., and L. Williams. 2010. “Principal Component Analysis.”
 *Interdisciplinary Reviews: Computational Statistics* 2 (4): 433–59.
-<https://onlinelibrary.wiley.com/doi/abs/10.1002/wics.101>.
+<https://onlinelibrary.wiley.com/doi/abs/10.1002/wics.101>
 
 Belkin, M., and P. Niyogi. 2003. “Laplacian Eigenmaps for Dimensionality
 Reduction and Data Representation.” *Neural Computation* 15 (6):
 1373–96.
-<http://www2.imm.dtu.dk/projects/manifold/Papers/Laplacian.pdf>.
+<http://www2.imm.dtu.dk/projects/manifold/Papers/Laplacian.pdf>
 
 B. Manly, J. Navarro Alberto. 2016. *Multivariate Statistical Methods, a
 Primer*. Fourth. CRC Press.
-<http://www.econ.upf.edu/~satorra/AnalisiMultivariant/Chapt7MDS.pdf>.
+<http://www.econ.upf.edu/~satorra/AnalisiMultivariant/Chapt7MDS.pdf>
 
 Dellaert, F. 2008. “Singular Value and Eigenvalue Decompositions.”
 Georgia Tech. May 2008.
-<https://www.cc.gatech.edu/~dellaert/ftp/svd-note.pdf>.
+<https://www.cc.gatech.edu/~dellaert/ftp/svd-note.pdf>
 
 Ham, Jihun, Daniel D. Lee, Sebastian Mika, and Bernhard Scholkopf. 2004.
 “A Kernel View of the Dimensionality Reduction of Manifolds.”
 *Proceedings of the Twenty-First International Conference on Machine
-Learning*. <http://doi.acm.org/10.1145/1015330.1015417>.
+Learning*. <http://doi.acm.org/10.1145/1015330.1015417>
 
 J. Tenenbaum, J. Langford, V. Silva. 2000. “A Global Geometric Framework
 for Nonlinear Dimensionality Reduction.” *Science* 290 (December):
@@ -697,7 +697,7 @@ Reduction: A Comparitive Review.”
 
 NCSS. 2018. *NCSS Statistical Software*. Vol. Multidimensional Scaling.
 NCSS.
-<https://ncss-wpengine.netdna-ssl.com/wp-content/themes/ncss/pdf/Procedures/NCSS/Multidimensional_Scaling.pdf>.
+<https://ncss-wpengine.netdna-ssl.com/wp-content/themes/ncss/pdf/Procedures/NCSS/Multidimensional_Scaling.pdf>
 
 Roweis, S., and L. Saul. 2000. “Nonlinear Dimensionality Reduction by
 Locally Linear Embedding.” *Science* 290 (December): 2323–6.
@@ -705,32 +705,32 @@ Locally Linear Embedding.” *Science* 290 (December): 2323–6.
 
 S. Mika, J. Weston, G. Ratsch. 1999. “Fisher Discriminant Analysis with
 Kernels.” *IEEE*, August, 41–48.
-<http://doc.ml.tu-berlin.de/publications/publications/MikRaeWesSchMue99.pdf>.
+<http://doc.ml.tu-berlin.de/publications/publications/MikRaeWesSchMue99.pdf>
 
 T. Li, M. Ogihara, S. Zhu. 2006. “Using Discriminant Analysis for
 Multi-Class Classification: An Experimental Investigation.” *Knowledge
 and Information Systems* 10 (4): 453–72.
-<http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.89.7068&rep=rep1&type=pdf>.
+<http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.89.7068&rep=rep1&type=pdf>
 
 Wang, Q. 2012. “Kernel Principal Component Analysis and Its Applications
 in Face Recognition and Active Shape Models.” *CoRR* abs/1207.3538
-(August). <https://dblp.org/rec/bib/journals/corr/abs-1207-3538>.
+(August). <https://dblp.org/rec/bib/journals/corr/abs-1207-3538>
 
 Weinberger, K., and L. Saul. 2004. “Unsupervised Learning of Image
 Manifolds by Semidefinite Programming.” *IEEE* 2 (July): 988–95.
-<https://repository.upenn.edu/cgi/viewcontent.cgi?article=1000&context=cis_papers>.
+<https://repository.upenn.edu/cgi/viewcontent.cgi?article=1000&context=cis_papers>
 
 K. Weinberger and L. Saul. 2006. “An Introduction to Nonlinear Dimensionality Reduction by Maximum Variance Unfolding.” *AAI* 2 (July): 1683–6.
-<https://cseweb.ucsd.edu/~saul/papers/nldr_aaai06.pdf>.
+<https://cseweb.ucsd.edu/~saul/papers/nldr_aaai06.pdf>
 
 Welling, M. 2003. “Kernel Principal Component Analysis.” *University of
 Toronto*.
-<https://www.ics.uci.edu/~welling/classnotes/papers_class/kCCA.pdf>.
+<https://www.ics.uci.edu/~welling/classnotes/papers_class/kCCA.pdf>
 
 Wickelmaier, F. 2003. “An Introduction to Mds.”
-<https://homepage.uni-tuebingen.de/florian.wickelmaier/pubs/Wickelmaier2003SQRU.pdf>.
+<https://homepage.uni-tuebingen.de/florian.wickelmaier/pubs/Wickelmaier2003SQRU.pdf>
 
 Xiao, L., and J. Sun. 2006. “A Duality View of Spectral Methods for
 Dimensionality Reduction.” *International Conference on Machine
 Learning* 23: 1041–8.
-<https://web.stanford.edu/~boyd/papers/pdf/mvu_duality_icml06.pdf>.
+<https://web.stanford.edu/~boyd/papers/pdf/mvu_duality_icml06.pdf>
