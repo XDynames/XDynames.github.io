@@ -141,8 +141,10 @@ kernel matrix and weights \\(\alpha\\), thus the explicit evaluation of
 data may not be centred, this can be accounted for by centring the
 kernel. It can be shown that the centred kernel depends only on the
 non-centred kernel and is found by: \\[\begin{aligned}
-            K_{c}(\textbf{x}\_{i}, \textbf{x}\_{j}) &= K(\textbf{x}\_{i}, \textbf{x}\_{j}) - k(\textbf{x}\_{i})\textbf{1}\_{j}^{T} - \textbf{1}\_{i} k(\textbf{x}\_{j})^{T} + \ell\textbf{1}\_{i}\textbf{1}\_{j}^{T} \\
-            & \text{with } k_{i} = \frac{1}{n} \sum_{i=1}^{n} \textbf{K}\_{i,j} \\
+            K_{c}(\textbf{x}\_{i}, \textbf{x}\_{j}) &= K(\textbf{x}\_{i}, \textbf{x}\_{j}) - k(\textbf{x}\_{i})\textbf{1}\_{j}^{T} - \textbf{1}\_{i} k(\textbf{x}\_{j})^{T} + \ell\textbf{1}\_{i}\textbf{1}\_{j}^{T} \end{aligned}
+            \begin{aligned}
+            & \text{with } k_{i} = \frac{1}{n} \sum_{i=1}^{n} \textbf{K}\_{i,j} \end{aligned}
+            \begin{aligned}
             & \text{and } \ell = \frac{1}{n^{2}} \sum_{i,j =1}^{n}\textbf{K}\_{i,j}
         \end{aligned}\\] 
 
