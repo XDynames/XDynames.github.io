@@ -49,12 +49,13 @@ information that was present in the original space but without the added
 noise contained in the excluded low variance features. Ultimately
 enabling better classification performance and reduced computation time
 in the smaller space. Before application the technique the data-space
-needs to be centred about zero: $$\begin{aligned}
-            \sum_{i=1}^{n} \textbf{x}_i = 0
-        \end{aligned}$$ Where $n$ is the total number of features in the
-space. [@kPCA]
+needs to be centred about zero:
+$$\begin{aligned}
+            \sum_{i=1}^{n} \textbf{x}\_{i} = 0
+\end{aligned}$$ 
+Where $n$ is the total number of features in the space.
 
-### Linear {#linear .unnumbered}
+### Linear
 
 Two initial types of PCA can be formed by considering the covariance or
 correlation matrix respectively. The difference between these methods is
@@ -147,7 +148,7 @@ centred kernel depends only on the non-centred kernel and is found by:
 $$\begin{aligned}
             K_{c}(\textbf{x}_{i}, \textbf{x}_{j}) &= K(\textbf{x}_{i}, \textbf{x}_{j}) - k(\textbf{x}_{i})\textbf{1}_{j}^{T} - \textbf{1}_{i} k(\textbf{x}_{j})^{T} + \ell\textbf{1}_{i}\textbf{1}_{j}^{T} \\
             & \text{with } k_{i} = \frac{1}{n} \sum_{i=1}^{n} \textbf{K}_{i,j} \\
-            & \text{and } \ell = \frac{1}{n^{2}} \sum_{i,j =1}^{n}\textbf{K}_{i,j}
+            & \text{and } \ell = \frac{1}{n^{2}} \sum_{i,j =1}^{n}\textbf{K}\_{i,j}
         \end{aligned}$$ [@kPCA]
 
 Classical Multidimensional Scaling
@@ -200,7 +201,7 @@ number dimensions of the reduced space in eigenvectors that have the
 largest eigenvalues of the matrix $\textbf{S}_{W}^{-1}\textbf{S}_{B}$.
 New samples can be embedded into the space by calculating their
 projections onto $\textbf{w}$: $$\begin{aligned}
-    \textbf{y}_{i} = \textbf{w} \cdot \textbf{x}_{i}
+    \textbf{y}_{i} = \textbf{w} \cdot \textbf{x}\_{i}
     \end{aligned}$$
 
 ### Kernel
@@ -251,7 +252,7 @@ eigenvectors of $\textbf{N}^{-1}\textbf{M}$ to form
 $\boldsymbol{\alpha}$ which is then used to map samples from the
 original space via a linear combination of value of the kernel function:
 $$\begin{aligned}
-    \textbf{y}_{j} = \textbf{w} \cdot \textbf{x}_{j} = \sum_{i=1}^{n} \alpha_{i}k(\textbf{x}_{i},\textbf{x}_{j})
+    \textbf{y}_{j} = \textbf{w} \cdot \textbf{x}_{j} = \sum_{i=1}^{n} \alpha_{i}k(\textbf{x}_{i},\textbf{x}\_{j})
     \end{aligned}$$ By adding a multiple of the identity to the matrix
 $\textbf{N}$ numerically the problem becomes more stable.
 $\textbf(N)_{\mu} =\textbf{N}+\mu\textbf{I}$ is suggested as a
@@ -293,7 +294,7 @@ Conceptually this technique is visualised by considering samples that
 are attached to their nearest neighbours by inflexible rods. This linked
 structure is then pulled apart to form a lower dimensional embedding.
 
-### Primal {#primal .unnumbered}
+### Primal
 
 Formally this can be expressed as a quadratic programming problem
 naively maximising the distance between all points globally under the
@@ -319,7 +320,7 @@ $\textbf{K}$: $$\begin{aligned}
         \textbf{K}_{ii} + \textbf{K}_{jj} - \textbf{K}_{ij} - \textbf{K}_{ji} = \textbf{G}_{ii} + \textbf{G}_{jj} - \textbf{G}_{ij} - \textbf{G}_{ji}
     \end{cases}$$ Where
 $\textbf{G}_{ij} = \textbf{X}_{i} \cdot \textbf{X}_{j}$ and
-$\textbf{K}_{ij} = \textbf{Y}_{i} \cdot \textbf{Y}_{j}$ are the Gram
+$\textbf{K}_{ij} = \textbf{Y}_{i} \cdot \textbf{Y}\_{j}$ are the Gram
 matrices for the input and output spaces respectively. Once this
 optimisation is complete the resulting output Gram matrix $\textbf{K}$'s
 $k$ largest eigenvalue eigenvectors are used to embed pints from the
@@ -380,14 +381,14 @@ algorithm is as follows:
     can be selected using to methods:
 
     -   Heat Kernel -
-        $W_{ij}=exp\left(\frac{||\textbf{x}_{i}-\textbf{x}_j||^{2}}{t}\right)$
-        if samples $\textbf{x}_i$ and $\textbf{y}_j$ are connected or
+        $W_{ij}=exp\left(\frac{||\textbf{x}\_{i}-\textbf{x}\_j||^{2}}{t}\right)$
+        if samples $\textbf{x}\_i$ and $\textbf{y}\_j$ are connected or
         zero if they are not. $t$ is the temperature and can be tuned to
         modify embeddings
 
     -   Binary - In the limit as $t\rightarrow \infty$ the heat kernel
-        reduces to $W_{ij}=1$ if samples $\textbf{x}_i$ and
-        $\textbf{x}_j$ are connected or zero if they are not
+        reduces to $W_{ij}=1$ if samples $\textbf{x}\_i$ and
+        $\textbf{x}\_j$ are connected or zero if they are not
 
 3.  If these steps do not result in a full connected graph, the
     Laplacian matrix for each graph will need to be subjected to
@@ -422,7 +423,7 @@ $\textbf{E}^{\{ij\}}_{ii} = \textbf{E}^{\{ij\}}_{jj} = 1$ and
 $\textbf{E}^{\{ij\}}_{ij} = \textbf{E}^{\{ij\}}_{ji} = -1$, $\textbf{W}$
 is an $n \times n$ matrix with elements $\textbf{W}_{ij}$ are the same
 as the values of $\eta_{ij}$ and
-$\textbf{D}_{ij} = Trace(\textbf{K}\textbf{E}^{\{ij\}})$. The solution
+$\textbf{D}\_{ij} = Trace(\textbf{K}\textbf{E}^{\{ij\}})$. The solution
 to the dual problem is optimal for the primal if and only if they
 satisfy the Karush-Kuhn-Tucker conditions of primal and dual feasibility
 in addition to complementary slickness, otherwise some duality gap
