@@ -60,8 +60,7 @@ Popularity appears to be bi-modal, with modes at 0 and 20. The mode present at z
 
 Loudness has a single mode at around -5 with most examples lying to the left of the mode. This skews the distribution to the left. The distribution has a low kurtosis, evidenced by the lack of a sharp mode, (right).
 
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot1-1.png" alt="Histograms of the popularity (left) and loudness (right) variables imported from Spotify. \label{PopLoud}" width="0.49\linewidth" />
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot1-2.png" alt="Histograms of the popularity (left) and loudness (right) variables imported from Spotify. \label{PopLoud}" width="0.49\linewidth" />
+|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot1-1.png" alt="Histograms of the popularity (left) and loudness (right) variables imported from Spotify. \label{PopLoud}" width="0.49\linewidth" />|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot1-2.png" alt="Histograms of the popularity (left) and loudness (right) variables imported from Spotify. \label{PopLoud}" width="0.49\linewidth" />|
 <p class="caption">
 Histograms of the popularity (left) and loudness (right) variables imported from Spotify.
 </p>
@@ -69,7 +68,7 @@ Histograms of the popularity (left) and loudness (right) variables imported from
 Energy has an extremely low kurtosis, to the point that no easily identifiable mode. The examples are roughly uniformly distributed over the interval \[0.3, 0.9\] with a steep drop off in frequency either side of this interval, (left).
 
 Danceability displays a distribution that is approximately normal. There is a single mode at 0.6 and the kurtosis of the distribution appears to be normal (~3), (right).
-<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot2-1.png" alt="Histograms of the Energy (left) and Danceability (right) variables imported from Spotify. \label{EneDan}" width="0.49\linewidth" /><img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot2-2.png" alt="Histograms of the Energy (left) and Danceability (right) variables imported from Spotify. \label{EneDan}" width="0.49\linewidth" />
+|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot2-1.png" alt="Histograms of the Energy (left) and Danceability (right) variables imported from Spotify." />|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot2-2.png" alt="Histograms of the Energy (left) and Danceability (right) variables imported from Spotify"./>|
 <p class="caption">
 Histograms of the Energy (left) and Danceability (right) variables imported from Spotify.
 </p>
