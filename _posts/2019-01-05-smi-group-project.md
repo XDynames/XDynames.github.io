@@ -71,6 +71,7 @@ Energy has an extremely low kurtosis, to the point that no easily identifiable m
 Danceability displays a distribution that is approximately normal. There is a single mode at 0.6 and the kurtosis of the distribution appears to be normal, (right).
 
 |<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot2-1.png" alt="Histograms of the Energy (left) and Danceability (right) variables imported from Spotify."/>|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot2-2.png" alt="Histograms of the Energy (left) and Danceability (right) variables imported from Spotify."/>|
+
 <p class="caption">
 Histograms of the Energy (left) and Danceability (right) variables imported from Spotify.
 </p>
@@ -87,6 +88,7 @@ Mode shows a strong preference for songs to be written in major key as apposed t
 <p class="caption">
 Bar charts of the Key (left) and Mode (right) variables imported from the Spotify set.
 </p>
+
  (left) shows the number of tracks grouped by their respective time signatures. The most common time signature observed is 4 with about 1800 tracks The second most common time signature is 3 with around 250 tracks. Very few tracks have time signatures of 0, 1 and 5.
  (right) shows the number of tracks with respect to each decade analysed. The most common decade that songs originated from is the 50s, followed by the 70s, with about 600 and 550 songs respectively. The 60s, 80s, 90s, and 00s all have approximately 150 to 250 songs each.
 
@@ -95,6 +97,7 @@ Bar charts of the Key (left) and Mode (right) variables imported from the Spotif
 <p class="caption">
 Barcharts of the Time Signature (left) and Decade (right) variables imported from the Spotify set.
 </p>
+
 5. Bivariate Analysis
 =====================
 
@@ -107,6 +110,7 @@ Bi-variate analysis is the simultaneous analysis of two variables to explore the
  (right) appears to show no evidence of an association between the two variables, with the data points randomly scattered about the mean of Popularity. There is no indication of a nonlinear trend, or any outliers.
 
 |<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot6-1.png" alt="Scatter plots of the Duration (left) and Energy (right) variables against Popularity." />|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot6-2.png" alt="Scatter plots of the Duration (left) and Energy (right) variables against Popularity."/>|
+
 <p class="caption">
 Scatter plots of the Duration (left) and Energy (right) variables against Popularity.
 </p>
@@ -116,6 +120,7 @@ In (left) there appears to be a weak positive association between Popularity and
 A weak positive association is also evident in (right) between Popularity and Loudness, with some indication of curvature in the relationship. Again a dense section of samples are seen around popularity's mean that constitutes over a the range of values loudness has. Possible outliers may be present with lower levels of Loudness and higher Popularity scores. The variance of the Popularity score appears to be increasing for higher levels of Loudness.
 
 |<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot7-1.png" alt="Scatter plots of the Danceability (left) and Loudness (right) variables against Popularity."/>|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot7-2.png" alt="Scatter plots of the Danceability (left) and Loudness (right) variables against Popularity."/>|
+
 <p class="caption">
 Scatter plots of the Danceability (left) and Loudness (right) variables against Popularity.
 </p>
@@ -123,6 +128,7 @@ Scatter plots of the Danceability (left) and Loudness (right) variables against 
 ### 5.2 Categorical Variables
 
 |<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot9-1.png" alt="Box plots of sample Key (left) and Mode (right) variables against Popularity." />|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot9-2.png" alt="Box plots of sample Key (left) and Mode (right) variables against Popularity."/>|
+
 <p class="caption">
 Box plots of sample Key (left) and Mode (right) variables against Popularity.
 </p>
@@ -130,6 +136,7 @@ Box plots of sample Key (left) and Mode (right) variables against Popularity.
 Across the series of keys there is very little variation in group mean and variance. Some groups are are slightly smaller in range than others, but the distributions appear uniform. The only aspect in which they differ greatly is the density of examples present in the different categories; the sharp keys all being particularly sparse, .
 
 |<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot10-1.png" alt="Box plots of sample Time Signatue (left) and Decade (right) variables against Popularity." />|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//plot10-2.png" alt="Box plots of sample Time Signatue (left) and Decade (right) variables against Popularity." />|
+
 <p class="caption">
 Box plots of sample Time Signatue (left) and Decade (right) variables against Popularity.
 </p>
@@ -185,6 +192,7 @@ The assumptions of the final linear model are:
 These assumptions are checked using the plots below.
 
 |<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//Assumption Checking Plot 1-1.png" alt="Plots of the residual versus the fitted values for the two proposed models." />|<img src="https://raw.githubusercontent.com/XDynames/XDynames.github.io/master/assets/img/2019-01-05-smi-group-project//Assumption Checking Plot 1-2.png" alt="Plots of the residual versus the fitted values for the two proposed models." />|
+
 <p class="caption">
 Plots of the residual versus the fitted values for the two proposed models.
 </p>
