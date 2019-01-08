@@ -237,7 +237,7 @@ as: \\[
     \\] where
 \\(\textbf{N} = \sum_{j=1}^{2} \textbf{K}\_{j}(\textbf{I}-\textbf{1}\_{n_{j}})\textbf{K}\_{j}^{T}\\)
 and \\(\textbf{K{}}\\) is a \\(n \times n_{j}\\) matrix with elements
-\\((\textbf{K}\_{j})_{lm}=k(\textbf{x}\_{l},\textbf{x}\_{m}^{j})\\). This
+\\((\textbf{K}\_{j})\_{lm}=k(\textbf{x}\_{l},\textbf{x}\_{m}^{j})\\). This
 gives the reformulation of the function to be optimised as:
 \\[
     \textbf{Maximise  } \textbf{J}(\boldsymbol{\alpha}) = \frac{\boldsymbol{\alpha}^{T}\textbf{M} \boldsymbol{\alpha}}{\boldsymbol{\alpha}^{T}\textbf{N} \boldsymbol{\alpha}}
