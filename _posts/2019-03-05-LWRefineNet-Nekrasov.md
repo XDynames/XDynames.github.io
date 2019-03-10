@@ -33,6 +33,7 @@ By changing the convolution layers' kernel size from 3x3 to 1x1 in RefineNets up
 
 Disscussion Points
 ==================
+
 Receptive Field Size
 --------------------
 <p style='text-align: justify;'>
