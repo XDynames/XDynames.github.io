@@ -28,11 +28,28 @@ The Decoder itself is built from three units Residual Convoloutional Unit (RCU),
 Light-Weight RefineNEt
 ======================
 <p style='text-align: justify;'>
-By changing the convolution layers' kernel size from 3x3 to 1x1 in RefineNets upsampling pathways, while modifying the RCUs to an hour glass layering (1x1, 3x3, 1x1) the number of paramters in the model is reduced by more than a half. In general the kernel size of a convolutional layer will limit the amount of global features that can meaningfully be extracted by it, reduced the effective receptive field of the network. However in this case the refactoring of the network in this manner shows no significant effect on the observed receptive field or the overall preformance of the network when applied to segmentation tasks. This modification to the kernel sizes also allows the complete removal of RCUs from the network without loss of segmentation ability; further decreasing the number of learned parameters. Making these modifications eanbled average inference time to decreae from 60.25ms to 35.82 ms without loss of mean Intersection of Union on both the NYUDv2 and PASCAL Person-Part image sets using inputs of size 625x468.
+By changing the convolution layers' kernel size from 3x3 to 1x1 in RefineNets upsampling pathways, while modifying the RCUs to an hour glass layering (1x1, 3x3, 1x1) the number of paramters in the model is reduced by more than a half.  This modification to the kernel sizes also allows the complete removal of RCUs from the network without loss of segmentation ability; further decreasing the number of learned parameters. Making these modifications eanbled average inference time to decreae from 60.25ms to 35.82 ms without loss of mean Intersection of Union on both the NYUDv2 and PASCAL Person-Part image sets using inputs of size 625x468.
 </p>
 
 Disscussion Points
 ==================
+Receptive Field Size
+--------------------
+<p style='text-align: justify;'>
+In general the kernel size of a convolutional layer will limit the amount of global features that can meaningfully be extracted by it, reduced the effective receptive field of the network. From this understanding it would be logical to concude that reducing the kernel size of the convolution layers from 3x3 to 1x1 the network should have a reduced ability to locate objects within the scene when re-creating the labeled output. However in this case the reduction of kenrel sizes in the network shows no significant effect on the observed receptive field or the overall preformance of the network when applied to segmentation tasks.
+</p>
+<p style='text-align: justify;'>
+Although surprising, the decoding pathway may not require or be responsible for the primary information regarding the localisation of objects in an scene. Considering the FCNs first explored by Long et al. did not include convolution layers in skip connection preprocessing, besides a single layer used to match the number of channels between tensors, still retained placement of obejcts within scenes. This might indicate that a large portion of the global features responsible for the recetpive field originate from the encoder network. The orthongal decoder netowrk serving as a pre-processing transform that adjusts the balance of compoments being added from the different depths that already contain the information  relating to global context. 
+</p>
+<p style='text-align: justify;'>
+This would be supported by the interpretation of a 1x1 convolution being a pixel wise transform. However the effect of the max pooling layer may serve as a way to interpret the kernels transofrmation over a wider context. Perhaps this is better viewed in the Fusion block where a 1x1 convolution is followed by upsampling, deseminating the pixel-wise transform into adjecent values as part of the interpolation method used. In this way 1x1 convolutions with different post up/down-sampling layers might be able to be interpreted as convolution layers of a larger kernel size.  
+</p>
+
+Omission of RCUs
+----------------
+<p style='text-align: justify;'>
+It was observed that the removal of Residual Convolution Units form the light-weight network had no significant impact on segmentation preofrmance. However when the same modification is made to the original RefineNet structure a drop of more than 5% in accuracy is observed.
+</p>
 <p style='text-align: justify;'>
 
 </p>
