@@ -54,3 +54,10 @@ It was observed that the removal of Residual Convolution Units from the light-we
 In structure of RefineNet the RCUs act as further simple encoding layers with a skip from input to output, as found in ResNet. The units themselves are found in two distinct locations, applied raw back bone output or as a post/pre-processing layer for CRP and Fusion blocks respectively.
 Although comparable to the original RefineNet the performance of the network with same depth back bones is decreased by approximately 1%. This might be due to some information being encoded by the RCUs that can only be meaningfully included into predictions when larger kernel sizes are used. To further understand the interaction and effect of the RCUs ablation of them at different locations in the orthogonal network would determine if the smaller kernels make post-CRP units ineffectual or if there is true some additional encoding the RCUs are able to provide when acting upon intermediate backbone output or if the extra encoding is more useful at certain depths than others.
 </p>
+
+
+References
+==========
+Light-Weight RefineNet for Real-Time Semantic Segmentation
+Vladimir Nekrasov, Chunhua Shen, Ian Reid
+In BMVC 2018, arXiv:1810.03272
