@@ -5,7 +5,6 @@ date:   2019-12-01
 excerpt: "A sequenced reading list for understnading common network design features for computer vison tasks"
 tag: Image Classification, Deep Learning
 comments: false
-project: false
 ---
 
 
